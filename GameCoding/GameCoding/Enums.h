@@ -51,3 +51,17 @@ enum COLLISION_LAYER_TYPE
 
 	CLT_MAX
 };
+
+enum class ObjectState
+{
+	Idle,
+	Move,
+	Skill,
+};
+
+enum class WeaponType
+{
+	Sword,
+	Bow,
+	Staff,
+};

@@ -44,8 +44,8 @@ void Player::BeginPlay()
 {
 	Super::BeginPlay();
 
-	SetState(PlayerState::Move);
-	SetState(PlayerState::Idle);
+	SetState(ObjectState::Move);
+	SetState(ObjectState::Idle);
 
 	SetCellPos({ 5,5 }, true);
 }
@@ -57,13 +57,13 @@ void Player::Tick()
 	// TODO
 	switch (_state)
 	{
-	case PlayerState::Idle:
+	case ObjectState::Idle:
 		TickIdle();
 		break;
-	case PlayerState::Move:
+	case ObjectState::Move:
 		TickMove();
 		break;
-	case PlayerState::Skill:
+	case ObjectState::Skill:
 		TickSkill();
 		break;
 	}
@@ -87,7 +87,7 @@ void Player::OnComponentBeginOverlap(Collider* collider, Collider* other)
 
 	if (b2->GetCollisionLayerType() == CLT_GROUND)
 	{
-		SetState(PlayerState::Move);
+		SetState(ObjectState::Move);
 	}
 }
 
@@ -105,58 +105,20 @@ void Player::OnComponentEndOverlap(Collider* collider, Collider* other)
 
 }
 
-void Player::SetState(PlayerState state)
-{
-	if (_state == state)
-		return;
-
-	_state = state;
-	UpdateAnimation();
-}
-
-void Player::SetDir(Dir dir)
-{
-	_dir = dir;
-	UpdateAnimation();
-}
-
-bool Player::CanGo(VectorInt cellPos)
-{
-	DevScene* scene = dynamic_cast<DevScene*>(GET_SINGLE(SceneManager)->GetCurrentScene());
-	if(scene == nullptr)
-		return false;
-
-	return scene->CanGo(cellPos);
-}
-
-void Player::SetCellPos(VectorInt cellPos, bool teleport)
-{
-	_cellPos = cellPos;
-
-	DevScene* scene = dynamic_cast<DevScene*>(GET_SINGLE(SceneManager)->GetCurrentScene());
-	if (scene == nullptr)
-		return;
-
-	_destPos = scene->ConvertPos(cellPos);
-
-	if (teleport)
-		_pos = _destPos;
-}
-
 void Player::UpdateAnimation()
 {
 	switch (_state)
 	{
-	case PlayerState::Idle:
+	case ObjectState::Idle:
 		if (_keyPressed)
 			SetFlipbook(_flipbookMove[_dir]);
 		else
 			SetFlipbook(_flipbookIdle[_dir]);
 		break;
-	case PlayerState::Move:
+	case ObjectState::Move:
 		SetFlipbook(_flipbookMove[_dir]);
 		break;
-	case PlayerState::Skill:
+	case ObjectState::Skill:
 		SetFlipbook(_flipbookAttack[_dir]);
 		break;
 	}
@@ -205,7 +167,7 @@ void Player::TickIdle()
 		if (CanGo(nextPos))
 		{
 			SetCellPos(nextPos);
-			SetState(PlayerState::Move);
+			SetState(ObjectState::Move);
 		}
 	}
 	else if (GET_SINGLE(InputManager)->GetButton(KeyType::S))
@@ -216,7 +178,7 @@ void Player::TickIdle()
 		if (CanGo(nextPos))
 		{
 			SetCellPos(nextPos);
-			SetState(PlayerState::Move);
+			SetState(ObjectState::Move);
 		}
 	}
 	else if (GET_SINGLE(InputManager)->GetButton(KeyType::A))
@@ -227,7 +189,7 @@ void Player::TickIdle()
 		if (CanGo(nextPos))
 		{
 			SetCellPos(nextPos);
-			SetState(PlayerState::Move);
+			SetState(ObjectState::Move);
 		}
 	}
 	else if (GET_SINGLE(InputManager)->GetButton(KeyType::D))
@@ -238,13 +200,13 @@ void Player::TickIdle()
 		if (CanGo(nextPos))
 		{
 			SetCellPos(nextPos);
-			SetState(PlayerState::Move);
+			SetState(ObjectState::Move);
 		}
 	}
 	else
 	{
 		_keyPressed = false;
-		if (_state == PlayerState::Idle)
+		if (_state == ObjectState::Idle)
 			UpdateAnimation();
 	}
 }
@@ -252,10 +214,12 @@ void Player::TickIdle()
 void Player::TickMove()
 {
 	float deltaTime = GET_SINGLE(TimeManager)->GetDeltaTime();
+
+	// 어느 정도 거리 이상으로 왔으면 도착했다고 인지를 하는 부분
 	Vector dir = (_destPos - _pos);
-	if (dir.Length() < 10.f)
+	if (dir.Length() < 5.f)
 	{
-		SetState(PlayerState::Idle);
+		SetState(ObjectState::Idle);
 		_pos = _destPos;
 	}
 	else

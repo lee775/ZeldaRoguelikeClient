@@ -84,6 +84,15 @@
     <Filter Include="소스 파일\01. Manager\Disable">
       <UniqueIdentifier>{bbb4fd97-b275-4f0a-9d93-41f996d4f11a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\03. Object\Game\Creature">
+      <UniqueIdentifier>{1a2ea8ad-691b-4e51-b33a-fa11d2bd152e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\03. Object\Game\Effect">
+      <UniqueIdentifier>{2b32a23e-bed2-401d-be8c-ca2aeaa608d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\03. Object\Game\Projectile">
+      <UniqueIdentifier>{f5f45ed4-1373-454d-b97f-6cc29753052b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameCoding.h">
@@ -164,9 +173,6 @@
     <ClInclude Include="UIManager.h">
       <Filter>소스 파일\01. Manager\Disable</Filter>
     </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>소스 파일\03. Object\Game</Filter>
-    </ClInclude>
     <ClInclude Include="Actor.h">
       <Filter>소스 파일\03. Object\Unreal</Filter>
     </ClInclude>
@@ -239,6 +245,27 @@
     <ClInclude Include="Sound.h">
       <Filter>소스 파일\04. Resources</Filter>
     </ClInclude>
+    <ClInclude Include="MainGameObject.h">
+      <Filter>소스 파일\03. Object\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>소스 파일\03. Object\Game\Creature</Filter>
+    </ClInclude>
+    <ClInclude Include="Creature.h">
+      <Filter>소스 파일\03. Object\Game\Creature</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMonster.h">
+      <Filter>소스 파일\03. Object\Game\Creature</Filter>
+    </ClInclude>
+    <ClInclude Include="HitEffect.h">
+      <Filter>소스 파일\03. Object\Game\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Projectile.h">
+      <Filter>소스 파일\03. Object\Game\Projectile</Filter>
+    </ClInclude>
+    <ClInclude Include="Arrow.h">
+      <Filter>소스 파일\03. Object\Game\Projectile</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="GameCoding.rc">
@@ -307,9 +334,6 @@
     </ClCompile>
     <ClCompile Include="UIManager.cpp">
       <Filter>소스 파일\01. Manager\Disable</Filter>
-    </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>소스 파일\03. Object\Game</Filter>
     </ClCompile>
     <ClCompile Include="Actor.cpp">
       <Filter>소스 파일\03. Object\Unreal</Filter>
@@ -385,6 +409,27 @@
     </ClCompile>
     <ClCompile Include="Sound.cpp">
       <Filter>소스 파일\04. Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGameObject.cpp">
+      <Filter>소스 파일\03. Object\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>소스 파일\03. Object\Game\Creature</Filter>
+    </ClCompile>
+    <ClCompile Include="Creature.cpp">
+      <Filter>소스 파일\03. Object\Game\Creature</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMonster.cpp">
+      <Filter>소스 파일\03. Object\Game\Creature</Filter>
+    </ClCompile>
+    <ClCompile Include="HitEffect.cpp">
+      <Filter>소스 파일\03. Object\Game\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Projectile.cpp">
+      <Filter>소스 파일\03. Object\Game\Projectile</Filter>
+    </ClCompile>
+    <ClCompile Include="Arrow.cpp">
+      <Filter>소스 파일\03. Object\Game\Projectile</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
