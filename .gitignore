@@ -1,0 +1,21 @@
+# 빌드 결과물 무시
+*.pch
+*.obj
+*.pdb
+*.ilk
+*.tlog
+*.idb
+*.exe
+*.log
+
+# Visual Studio 관련
+*.VC.db
+*.suo
+*.user
+
+# 빌드 폴더 무시
+/GameCoding/GameCoding/x64/
+/GameCoding/Binaries/
+/GameCoding/Intermediate/
+/GameCoding/GameCoding/Debug/
+/GameCoding/GameCoding/Release/
