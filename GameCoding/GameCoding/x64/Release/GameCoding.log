@@ -1,0 +1,845 @@
+﻿  Actor.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'Actor.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'Actor.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'Actor.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+  BoxCollider.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'BoxCollider.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'BoxCollider.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'BoxCollider.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\BoxCollider.cpp(37,41): warning C4244: '인수': 'float'에서 'int32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\BoxCollider.cpp(37,33): warning C4244: '인수': 'float'에서 'int32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Bullet.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'Bullet.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'Bullet.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'Bullet.cpp'을(를) 컴파일하는 중)
+  
+  Button.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'Button.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'Button.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'Button.cpp'을(를) 컴파일하는 중)
+  
+  CameraComponent.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'CameraComponent.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'CameraComponent.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'CameraComponent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\CameraComponent.cpp(26,12): error C2039: 'clamp': '`global namespace''의 멤버가 아닙니다.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\CameraComponent.cpp(26,12): error C3861: 'clamp': 식별자를 찾을 수 없습니다.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\CameraComponent.cpp(27,12): error C2039: 'clamp': '`global namespace''의 멤버가 아닙니다.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\CameraComponent.cpp(27,12): error C3861: 'clamp': 식별자를 찾을 수 없습니다.
+  Collider.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'Collider.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'Collider.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'Collider.cpp'을(를) 컴파일하는 중)
+  
+  CollisionManager.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'CollisionManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'CollisionManager.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'CollisionManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\CollisionManager.cpp(24,28): error C2039: 'contains': 'std::unordered_set<Collider *,std::hash<Collider *>,std::equal_to<Collider *>,std::allocator<Collider *>>'의 멤버가 아닙니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\unordered_set(59,7):
+      'std::unordered_set<Collider *,std::hash<Collider *>,std::equal_to<Collider *>,std::allocator<Collider *>>' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\CollisionManager.cpp(34,28): error C2039: 'contains': 'std::unordered_set<Collider *,std::hash<Collider *>,std::equal_to<Collider *>,std::allocator<Collider *>>'의 멤버가 아닙니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\unordered_set(59,7):
+      'std::unordered_set<Collider *,std::hash<Collider *>,std::equal_to<Collider *>,std::allocator<Collider *>>' 선언을 참조하십시오.
+  
+  Component.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'Component.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'Component.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'Component.cpp'을(를) 컴파일하는 중)
+  
+  DevScene.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'DevScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'DevScene.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'DevScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(17,23): error C2653: 'fs': 클래스 또는 네임스페이스 이름이 아닙니다.
+  (소스 파일 'DevScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(17,27): error C2061: 구문 오류: 식별자 'path'
+  (소스 파일 'DevScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,8): error C2653: 'fs': 클래스 또는 네임스페이스 이름이 아닙니다.
+  (소스 파일 'DevScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,2): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'DevScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,16): error C2143: 구문 오류: ';'이(가) '&' 앞에 없습니다.
+  (소스 파일 'DevScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,36): error C2334: '{' 앞에 예기치 않은 토큰이 있습니다. 명백한 함수 본문을 건너뜁니다.
+  (소스 파일 'DevScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(35,2): error C2653: 'fs': 클래스 또는 네임스페이스 이름이 아닙니다.
+  (소스 파일 'DevScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(35,11): error C3646: '_resourcePath': 알 수 없는 재정의 지정자입니다.
+  (소스 파일 'DevScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(35,6): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'DevScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(12,2): error C2789: 'ResourceManager::path': const 한정 형식의 개체를 초기화해야 합니다.
+  (소스 파일 'DevScene.cpp'을(를) 컴파일하는 중)
+      C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,12):
+      'ResourceManager::path' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\DevScene.cpp(85,48): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\DevScene.cpp(85,36): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  EditScene.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'EditScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'EditScene.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'EditScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\EditScene.cpp(77,23): error C2039: 'format': 'std'의 멤버가 아닙니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\fstream(20,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\EditScene.cpp(77,23): error C3861: 'format': 식별자를 찾을 수 없습니다.
+  Flipbook.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'Flipbook.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'Flipbook.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'Flipbook.cpp'을(를) 컴파일하는 중)
+  
+  FlipbookActor.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'FlipbookActor.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'FlipbookActor.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'FlipbookActor.cpp'을(를) 컴파일하는 중)
+  
+  Game.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(17,23): error C2653: 'fs': 클래스 또는 네임스페이스 이름이 아닙니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(17,27): error C2061: 구문 오류: 식별자 'path'
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,8): error C2653: 'fs': 클래스 또는 네임스페이스 이름이 아닙니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,2): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,16): error C2143: 구문 오류: ';'이(가) '&' 앞에 없습니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,36): error C2334: '{' 앞에 예기치 않은 토큰이 있습니다. 명백한 함수 본문을 건너뜁니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(35,2): error C2653: 'fs': 클래스 또는 네임스페이스 이름이 아닙니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(35,11): error C3646: '_resourcePath': 알 수 없는 재정의 지정자입니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(35,6): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(12,2): error C2789: 'ResourceManager::path': const 한정 형식의 개체를 초기화해야 합니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+      C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,12):
+      'ResourceManager::path' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Game.cpp(43,42): error C2653: 'fs': 클래스 또는 네임스페이스 이름이 아닙니다.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Game.cpp(43,46): error C3861: 'path': 식별자를 찾을 수 없습니다.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Game.cpp(43,31): error C2660: 'ResourceManager::Init': 함수는 2개의 인수를 사용하지 않습니다.
+      C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(17,7):
+      'ResourceManager::Init' 선언을 참조하십시오.
+      C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Game.cpp(43,31):
+      인수 목록 '(HWND, unknown-type)'을(를) 일치시키는 동안
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Game.cpp(63,22): error C2039: 'format': 'std'의 멤버가 아닙니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Game.cpp(63,22): error C3861: 'format': 식별자를 찾을 수 없습니다.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Game.cpp(68,22): error C2039: 'format': 'std'의 멤버가 아닙니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Game.cpp(68,22): error C3861: 'format': 식별자를 찾을 수 없습니다.
+  GameCoding.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'GameCoding.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'GameCoding.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'GameCoding.cpp'을(를) 컴파일하는 중)
+  
+  GameObject.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'GameObject.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'GameObject.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'GameObject.cpp'을(를) 컴파일하는 중)
+  
+  GameScene.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'GameScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'GameScene.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'GameScene.cpp'을(를) 컴파일하는 중)
+  
+  InputManager.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'InputManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'InputManager.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'InputManager.cpp'을(를) 컴파일하는 중)
+  
+  LineMesh.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'LineMesh.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'LineMesh.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'LineMesh.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\LineMesh.cpp(42,22): error C2039: 'format': 'std'의 멤버가 아닙니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\fstream(20,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\LineMesh.cpp(42,22): error C3861: 'format': 식별자를 찾을 수 없습니다.
+  Missile.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'Missile.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'Missile.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'Missile.cpp'을(를) 컴파일하는 중)
+  
+  Monster.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'Monster.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'Monster.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'Monster.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Monster.cpp(115,22): error C2039: 'format': 'std'의 멤버가 아닙니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Monster.cpp(115,22): error C3861: 'format': 식별자를 찾을 수 없습니다.
+  컴파일하고 있습니다...
+  Object.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'Object.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'Object.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'Object.cpp'을(를) 컴파일하는 중)
+  
+  ObjectManager.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'ObjectManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'ObjectManager.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'ObjectManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ObjectManager.cpp(32,2): warning C4150: 불완전한 형식 'Object'에 대한 포인터를 삭제했습니다. 소멸자가 호출되지 않습니다.
+      C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ObjectManager.h(3,7):
+      'Object' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ObjectManager.cpp(37,69): warning C4150: 불완전한 형식 'Object'에 대한 포인터를 삭제했습니다. 소멸자가 호출되지 않습니다.
+      C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ObjectManager.h(3,7):
+      'Object' 선언을 참조하십시오.
+  
+  Panel.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'Panel.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'Panel.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'Panel.cpp'을(를) 컴파일하는 중)
+  
+  pch.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'pch.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'pch.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'pch.cpp'을(를) 컴파일하는 중)
+  
+  Player.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(17,23): error C2653: 'fs': 클래스 또는 네임스페이스 이름이 아닙니다.
+  (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(17,27): error C2061: 구문 오류: 식별자 'path'
+  (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,8): error C2653: 'fs': 클래스 또는 네임스페이스 이름이 아닙니다.
+  (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,2): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,16): error C2143: 구문 오류: ';'이(가) '&' 앞에 없습니다.
+  (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,36): error C2334: '{' 앞에 예기치 않은 토큰이 있습니다. 명백한 함수 본문을 건너뜁니다.
+  (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(35,2): error C2653: 'fs': 클래스 또는 네임스페이스 이름이 아닙니다.
+  (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(35,11): error C3646: '_resourcePath': 알 수 없는 재정의 지정자입니다.
+  (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(35,6): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(12,2): error C2789: 'ResourceManager::path': const 한정 형식의 개체를 초기화해야 합니다.
+  (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
+      C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,12):
+      'ResourceManager::path' 선언을 참조하십시오.
+  
+  PlayerMoveScript.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'PlayerMoveScript.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'PlayerMoveScript.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'PlayerMoveScript.cpp'을(를) 컴파일하는 중)
+  
+  ResourceManager.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'ResourceManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'ResourceManager.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'ResourceManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(17,23): error C2653: 'fs': 클래스 또는 네임스페이스 이름이 아닙니다.
+  (소스 파일 'ResourceManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(17,27): error C2061: 구문 오류: 식별자 'path'
+  (소스 파일 'ResourceManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,8): error C2653: 'fs': 클래스 또는 네임스페이스 이름이 아닙니다.
+  (소스 파일 'ResourceManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,2): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'ResourceManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,16): error C2143: 구문 오류: ';'이(가) '&' 앞에 없습니다.
+  (소스 파일 'ResourceManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,36): error C2334: '{' 앞에 예기치 않은 토큰이 있습니다. 명백한 함수 본문을 건너뜁니다.
+  (소스 파일 'ResourceManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(35,2): error C2653: 'fs': 클래스 또는 네임스페이스 이름이 아닙니다.
+  (소스 파일 'ResourceManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(35,11): error C3646: '_resourcePath': 알 수 없는 재정의 지정자입니다.
+  (소스 파일 'ResourceManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(35,6): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'ResourceManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(12,2): error C2789: 'ResourceManager::path': const 한정 형식의 개체를 초기화해야 합니다.
+  (소스 파일 'ResourceManager.cpp'을(를) 컴파일하는 중)
+      C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,12):
+      'ResourceManager::path' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.cpp(16,39): error C2653: 'fs': 클래스 또는 네임스페이스 이름이 아닙니다.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.cpp(16,43): error C2061: 구문 오류: 식별자 'path'
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.cpp(19,5): error C2065: '_resourcePath': 선언되지 않은 식별자입니다.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.cpp(19,21): error C2065: 'resourcePath': 선언되지 않은 식별자입니다.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.cpp(81,5): error C2653: 'fs': 클래스 또는 네임스페이스 이름이 아닙니다.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.cpp(81,14): error C2146: 구문 오류: ';'이(가) 'fullPath' 식별자 앞에 없습니다.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.cpp(81,14): error C2065: 'fullPath': 선언되지 않은 식별자입니다.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.cpp(81,25): error C2065: '_resourcePath': 선언되지 않은 식별자입니다.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.cpp(84,29): error C2065: 'fullPath': 선언되지 않은 식별자입니다.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.cpp(84,14): error C2660: 'Texture::LoadBmp': 함수는 1개의 인수를 사용하지 않습니다.
+      C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Texture.h(11,11):
+      'Texture::LoadBmp' 선언을 참조하십시오.
+      C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.cpp(84,14):
+      인수 목록 '(HWND)'을(를) 일치시키는 동안
+  
+  ResourcesBase.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'ResourcesBase.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'ResourcesBase.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'ResourcesBase.cpp'을(를) 컴파일하는 중)
+  
+  Scene.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'Scene.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'Scene.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'Scene.cpp'을(를) 컴파일하는 중)
+  
+  SceneManager.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'SceneManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'SceneManager.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'SceneManager.cpp'을(를) 컴파일하는 중)
+  
+  SphereCollider.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'SphereCollider.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'SphereCollider.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'SphereCollider.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\SphereCollider.cpp(40,30): warning C4244: '인수': 'float'에서 'int32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Sprite.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'Sprite.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'Sprite.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'Sprite.cpp'을(를) 컴파일하는 중)
+  
+  SpriteActor.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'SpriteActor.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'SpriteActor.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'SpriteActor.cpp'을(를) 컴파일하는 중)
+  
+  SpriteRenderer.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'SpriteRenderer.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'SpriteRenderer.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'SpriteRenderer.cpp'을(를) 컴파일하는 중)
+  
+  TestPanel.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'TestPanel.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'TestPanel.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'TestPanel.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(17,23): error C2653: 'fs': 클래스 또는 네임스페이스 이름이 아닙니다.
+  (소스 파일 'TestPanel.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(17,27): error C2061: 구문 오류: 식별자 'path'
+  (소스 파일 'TestPanel.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,8): error C2653: 'fs': 클래스 또는 네임스페이스 이름이 아닙니다.
+  (소스 파일 'TestPanel.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,2): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'TestPanel.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,16): error C2143: 구문 오류: ';'이(가) '&' 앞에 없습니다.
+  (소스 파일 'TestPanel.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,36): error C2334: '{' 앞에 예기치 않은 토큰이 있습니다. 명백한 함수 본문을 건너뜁니다.
+  (소스 파일 'TestPanel.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(35,2): error C2653: 'fs': 클래스 또는 네임스페이스 이름이 아닙니다.
+  (소스 파일 'TestPanel.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(35,11): error C3646: '_resourcePath': 알 수 없는 재정의 지정자입니다.
+  (소스 파일 'TestPanel.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(35,6): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'TestPanel.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(12,2): error C2789: 'ResourceManager::path': const 한정 형식의 개체를 초기화해야 합니다.
+  (소스 파일 'TestPanel.cpp'을(를) 컴파일하는 중)
+      C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,12):
+      'ResourceManager::path' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\TestPanel.cpp(13,7): error C2660: 'Button::SetSprite': 함수는 1개의 인수를 사용하지 않습니다.
+      C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Button.h(30,7):
+      'Button::SetSprite' 선언을 참조하십시오.
+      C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\TestPanel.cpp(13,7):
+      인수 목록 '(nullptr)'을(를) 일치시키는 동안
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\TestPanel.cpp(63,21): error C2039: 'format': 'std'의 멤버가 아닙니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\TestPanel.cpp(63,21): error C3861: 'format': 식별자를 찾을 수 없습니다.
+  Texture.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'Texture.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'Texture.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'Texture.cpp'을(를) 컴파일하는 중)
+  
+  TimeManager.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'TimeManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'TimeManager.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'TimeManager.cpp'을(를) 컴파일하는 중)
+  
+  UI.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'UI.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'UI.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'UI.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\UI.cpp(29,10): warning C4838: 'float'에서 'LONG'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\UI.cpp(29,10): warning C4244: '초기화 중': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\UI.cpp(30,10): warning C4838: 'float'에서 'LONG'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\UI.cpp(30,10): warning C4244: '초기화 중': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\UI.cpp(31,10): warning C4838: 'float'에서 'LONG'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\UI.cpp(31,10): warning C4244: '초기화 중': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\UI.cpp(32,10): warning C4838: 'float'에서 'LONG'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\UI.cpp(32,10): warning C4244: '초기화 중': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  UIManager.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'UIManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'UIManager.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'UIManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(17,23): error C2653: 'fs': 클래스 또는 네임스페이스 이름이 아닙니다.
+  (소스 파일 'UIManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(17,27): error C2061: 구문 오류: 식별자 'path'
+  (소스 파일 'UIManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,8): error C2653: 'fs': 클래스 또는 네임스페이스 이름이 아닙니다.
+  (소스 파일 'UIManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,2): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'UIManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,16): error C2143: 구문 오류: ';'이(가) '&' 앞에 없습니다.
+  (소스 파일 'UIManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,36): error C2334: '{' 앞에 예기치 않은 토큰이 있습니다. 명백한 함수 본문을 건너뜁니다.
+  (소스 파일 'UIManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(35,2): error C2653: 'fs': 클래스 또는 네임스페이스 이름이 아닙니다.
+  (소스 파일 'UIManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(35,11): error C3646: '_resourcePath': 알 수 없는 재정의 지정자입니다.
+  (소스 파일 'UIManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(35,6): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'UIManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(12,2): error C2789: 'ResourceManager::path': const 한정 형식의 개체를 초기화해야 합니다.
+  (소스 파일 'UIManager.cpp'을(를) 컴파일하는 중)
+      C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\ResourceManager.h(21,12):
+      'ResourceManager::path' 선언을 참조하십시오.
+  
+  Utils.cpp
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\Types.h(156,16): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'Utils.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2039: 'filesystem': 'std'의 멤버가 아닙니다.
+  (소스 파일 'Utils.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional(31,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\gh563\Desktop\욱채자습\루키스강의\windowsCoding\GameCoding\GameCoding\pch.h(26,21): error C2878: 'filesystem': 같은 이름을 가진 네임스페이스 또는 클래스가 없습니다.
+  (소스 파일 'Utils.cpp'을(를) 컴파일하는 중)
+  
