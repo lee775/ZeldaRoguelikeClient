@@ -32,7 +32,6 @@ void GameMonster::BeginPlay()
 
 void GameMonster::Tick()
 {
-
 	Super::Tick();
 
 	// TODO

@@ -22,6 +22,7 @@
 #include "TileMap.h"
 #include "SoundManager.h"
 #include "Sound.h"
+#include "GameMonster.h"
 
 DevScene::DevScene()
 {
@@ -71,8 +72,9 @@ void DevScene::Init()
 	LoadEffect();
 	LoadTilemap();
 
-
 	SpawnObject<Player>(VectorInt{ 5,5 });
+	SpawnObject<GameMonster>(VectorInt{ 7,7 });
+
 	//{
 	//	Player* player = new Player();
 	//	//{
@@ -289,22 +291,22 @@ void DevScene::LoadMonster()
 	{
 		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Snake");
 		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_SnakeUp");
-		fb->SetInfo({ texture, L"FB_SnakeUp", {200, 200}, 0, 3, 3, 0.5f, false });
+		fb->SetInfo({ texture, L"FB_SnakeUp", {100, 100}, 0, 3, 3, 0.5f, true });
 	}
 	{
 		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Snake");
 		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_SnakeDown");
-		fb->SetInfo({ texture, L"FB_SnakeDown", {200, 200}, 0, 3, 0, 0.5f, false });
+		fb->SetInfo({ texture, L"FB_SnakeDown", {100, 100}, 0, 3, 0, 0.5f, true });
 	}
 	{
 		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Snake");
 		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_SnakeLeft");
-		fb->SetInfo({ texture, L"FB_SnakeLeft", {200, 200}, 0, 3, 2, 0.5f, false });
+		fb->SetInfo({ texture, L"FB_SnakeLeft", {100, 100}, 0, 3, 2, 0.5f, true });
 	}
 	{
 		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Snake");
 		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_SnakeRight");
-		fb->SetInfo({ texture, L"FB_SnakeRight", {200, 200}, 0, 3, 1, 0.5f, false });
+		fb->SetInfo({ texture, L"FB_SnakeRight", {100, 100}, 0, 3, 1, 0.5f, true });
 	}
 }
 
@@ -313,22 +315,22 @@ void DevScene::LoadProjectile()
 	{
 		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Arrow");
 		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_ArrowUp");
-		fb->SetInfo({ texture, L"FB_ArrowUp", {200, 200}, 0, 3, 3, 0.5f, false });
+		fb->SetInfo({ texture, L"FB_ArrowUp", {100, 100}, 0, 0, 3, 0.5f, false });
 	}
 	{
 		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Arrow");
 		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_ArrowDown");
-		fb->SetInfo({ texture, L"FB_ArrowDown", {200, 200}, 0, 3, 0, 0.5f, false });
+		fb->SetInfo({ texture, L"FB_ArrowDown", {100, 100}, 0, 0, 0, 0.5f, false });
 	}
 	{
 		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Arrow");
 		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_ArrowLeft");
-		fb->SetInfo({ texture, L"FB_ArrowLeft", {200, 200}, 0, 3, 2, 0.5f, false });
+		fb->SetInfo({ texture, L"FB_ArrowLeft", {100, 100}, 0, 0, 2, 0.5f, false });
 	}
 	{
 		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Arrow");
 		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_ArrowRight");
-		fb->SetInfo({ texture, L"FB_ArrowRight", {200, 200}, 0, 3, 1, 0.5f, false });
+		fb->SetInfo({ texture, L"FB_ArrowRight", {100, 100}, 0, 0, 1, 0.5f, false });
 	}
 }
 
@@ -337,7 +339,7 @@ void DevScene::LoadEffect()
 	{
 		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Hit");
 		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_Hit");
-		fb->SetInfo({ texture, L"FB_Hit", {200, 200}, 0, 3, 3, 0.5f, false });
+		fb->SetInfo({ texture, L"FB_Hit", {50, 47}, 0, 5, 0, 0.5f, false });
 	}
 }
 
