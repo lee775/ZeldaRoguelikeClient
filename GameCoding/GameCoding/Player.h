@@ -27,6 +27,10 @@ private:
 	virtual void TickSkill() override;
 	virtual void UpdateAnimation() override;
 
+	void SetWeaponType(WeaponType weaponType) { _weaponType = weaponType; }
+	WeaponType GetWeaponType() { return _weaponType; }
+
+
 private:
 	void AdjustCollisionPos(BoxCollider* b1, BoxCollider* b2);
 
@@ -34,7 +38,10 @@ private:
 	Flipbook* _flipbookIdle[4] = {};
 	Flipbook* _flipbookMove[4] = {};
 	Flipbook* _flipbookAttack[4] = {};
+	Flipbook* _flipbookBow[4] = {};
+	Flipbook* _flipbookStaff[4] = {};
 
 	bool _keyPressed = false;
+	WeaponType _weaponType = WeaponType::Sword;
 };
 

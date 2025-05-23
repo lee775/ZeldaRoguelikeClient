@@ -16,7 +16,14 @@ Scene::~Scene()
 
 void Scene::Init()
 {
+	for (const vector<Actor*>& actors : _actors)
+	{
+		for (Actor* actor : actors)
+			actor->BeginPlay();
+	}
 
+	for (UI* ui : _uis)
+		ui->BeginPlay();
 }
 
 void Scene::Update()

@@ -39,20 +39,23 @@ DevScene::~DevScene()
 
 void DevScene::Init()
 {
+	//GET_SINGLE(ResourceManager)->LoadTexture(L"BG", L"Sprite\\BG.bmp");
 	GET_SINGLE(ResourceManager)->LoadTexture(L"Stage01", L"Sprite\\Map\\Stage01.bmp");
 	GET_SINGLE(ResourceManager)->LoadTexture(L"Tile", L"Sprite\\Map\\Tile.bmp", RGB(128, 128, 128));
-	//GET_SINGLE(ResourceManager)->LoadTexture(L"Sword", L"Sprite\\Item\\Sword.bmp");
-	//GET_SINGLE(ResourceManager)->LoadTexture(L"Potion", L"Sprite\\Item\\Potion.bmp");
+	GET_SINGLE(ResourceManager)->LoadTexture(L"Sword", L"Sprite\\Item\\Sword.bmp");
+	GET_SINGLE(ResourceManager)->LoadTexture(L"Potion", L"Sprite\\UI\\Mp.bmp");
 	GET_SINGLE(ResourceManager)->LoadTexture(L"PlayerDown", L"Sprite\\Player\\PlayerDown.bmp", RGB(128, 128, 128));
 	GET_SINGLE(ResourceManager)->LoadTexture(L"PlayerUp", L"Sprite\\Player\\PlayerUp.bmp", RGB(128, 128, 128));
 	GET_SINGLE(ResourceManager)->LoadTexture(L"PlayerLeft", L"Sprite\\Player\\PlayerLeft.bmp", RGB(128, 128, 128));
 	GET_SINGLE(ResourceManager)->LoadTexture(L"PlayerRight", L"Sprite\\Player\\PlayerRight.bmp", RGB(128, 128, 128));
+	GET_SINGLE(ResourceManager)->LoadTexture(L"Snake", L"Sprite\\Monster\\Snake.bmp", RGB(128, 128, 128));
+	GET_SINGLE(ResourceManager)->LoadTexture(L"Hit", L"Sprite\\Effect\\Hit.bmp", RGB(0, 0, 0));
 	GET_SINGLE(ResourceManager)->LoadTexture(L"Start", L"Sprite\\UI\\Start.bmp");
 	GET_SINGLE(ResourceManager)->LoadTexture(L"Edit", L"Sprite\\UI\\Edit.bmp");
 	GET_SINGLE(ResourceManager)->LoadTexture(L"Exit", L"Sprite\\UI\\Exit.bmp");
 
 	GET_SINGLE(ResourceManager)->CreateSprite(L"Stage01", GET_SINGLE(ResourceManager)->GetTexture(L"Stage01"));
-	GET_SINGLE(ResourceManager)->CreateSprite(L"Tile0", GET_SINGLE(ResourceManager)->GetTexture(L"Tile"), 0, 0, 48, 48);
+	GET_SINGLE(ResourceManager)->CreateSprite(L"TileO", GET_SINGLE(ResourceManager)->GetTexture(L"Tile"), 0, 0, 48, 48);
 	GET_SINGLE(ResourceManager)->CreateSprite(L"TileX", GET_SINGLE(ResourceManager)->GetTexture(L"Tile"), 48, 0, 48, 48);
 	GET_SINGLE(ResourceManager)->CreateSprite(L"Start_Off", GET_SINGLE(ResourceManager)->GetTexture(L"Start"), 0, 0, 150, 150);
 	GET_SINGLE(ResourceManager)->CreateSprite(L"Start_On", GET_SINGLE(ResourceManager)->GetTexture(L"Start"), 150, 0, 150, 150);
@@ -61,6 +64,119 @@ void DevScene::Init()
 	GET_SINGLE(ResourceManager)->CreateSprite(L"Exit_Off", GET_SINGLE(ResourceManager)->GetTexture(L"Exit"), 0, 0, 150, 150);
 	GET_SINGLE(ResourceManager)->CreateSprite(L"Exit_On", GET_SINGLE(ResourceManager)->GetTexture(L"Exit"), 150, 0, 150, 150);
 
+	LoadMap();
+	LoadPlayer();
+	LoadMonster();
+	LoadProjectile();
+	LoadEffect();
+	LoadTilemap();
+
+
+	SpawnObject<Player>(VectorInt{ 5,5 });
+	//{
+	//	Player* player = new Player();
+	//	//{
+	//	//	BoxCollider* collider = new BoxCollider();
+	//	//	collider->SetSize({ 100,100 });
+	//	//	collider->SetCollisionLayer(CLT_OBJECT);
+	//	//	collider->AddCollisionFlagLayer(CLT_GROUND);
+	//	//	//collider->AddCollisionFlagLayer(CLT_OBJECT);
+	//	//	//collider->SetRadius(50);
+	//	//	player->AddComponent(collider);
+	//	//	GET_SINGLE(CollisionManager)->AddCollider(collider);
+	//	//}
+	//	AddActor(player);
+	//}
+
+	//{
+	//	Actor* player = new Actor();
+	//	player->SetLayer(LAYER_OBJECT);
+	//	player->SetPos({ 500,200 });
+	//	{
+	//		BoxCollider* collider = new BoxCollider();
+	//		collider->SetSize({ 100,100 });
+	//		collider->SetCollisionLayer(CLT_GROUND);
+	//		player->SetPos({ 400,200 });
+	//		player->AddComponent(collider);
+	//		GET_SINGLE(CollisionManager)->AddCollider(collider);
+	//	}
+	//	AddActor(player);
+	//}
+
+	//{
+	//	Actor* player = new Actor();
+	//	player->SetLayer(LAYER_OBJECT);
+	//	player->SetPos({ 200,400 });
+	//	{
+	//		BoxCollider* collider = new BoxCollider();
+	//		collider->SetSize({ 10000,100 });
+	//		collider->SetCollisionLayer(CLT_GROUND);
+	//		uint32 flag = 0;
+
+	//		collider->SetCollsionFlag(flag);
+
+	//		player->AddComponent(collider);
+	//		GET_SINGLE(CollisionManager)->AddCollider(collider);
+	//	}
+	//	AddActor(player);
+	//}
+
+	//{
+	//	TestPanel* ui = new TestPanel();
+	//	_uis.push_back(ui);
+	//}
+
+	// BGM 추가
+	//GET_SINGLE(ResourceManager)->LoadSound(L"BGM", L"Sound\\BGM.wav");
+	//{
+		//Sound* sound = GET_SINGLE(ResourceManager)->GetSound(L"BGM");
+		//sound->Play(true);
+
+		//GET_SINGLE(SoundManager)->Play(L"BGM");
+	//}
+	Super::Init();
+	//_go->Start();
+}
+
+void DevScene::Update()
+{
+	Super::Update();
+
+	float deltaTime = GET_SINGLE(TimeManager)->GetDeltaTime();
+	// 거리 = 시간 * 속도
+
+	if (GET_SINGLE(InputManager)->GetButtonDown(KeyType::Q))
+	{
+		GET_SINGLE(ResourceManager)->SaveTilemap(L"Tilemap_01", L"Tilemap\\Tilemap01.txt");
+	}
+	else if (GET_SINGLE(InputManager)->GetButtonDown(KeyType::E))
+	{
+		GET_SINGLE(ResourceManager)->LoadTilemap(L"Tilemap_01", L"Tilemap\\Tilemap01.txt");
+	}
+}
+
+void DevScene::Render(HDC hdc)
+{
+	Super::Render(hdc);
+}
+
+void DevScene::LoadMap()
+{
+	{
+		Sprite* sprite = GET_SINGLE(ResourceManager)->GetSprite(L"Stage01");
+
+		SpriteActor* background = new SpriteActor();
+		background->SetSprite(sprite);
+		background->SetLayer(LAYER_BACKGROUND);
+		const VectorInt size = sprite->GetSize();
+		background->SetPos(Vector(size.x / 2, size.y / 2));
+
+		AddActor(background);
+	}
+}
+
+void DevScene::LoadPlayer()
+{
 	// IDLE
 	{
 		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerUp");
@@ -107,89 +223,126 @@ void DevScene::Init()
 	{
 		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerUp");
 		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_AttackUp");
-		fb->SetInfo({ texture, L"FB_MoveUp", {200, 200}, 0, 7, 3, 0.5f });
+		fb->SetInfo({ texture, L"FB_MoveUp", {200, 200}, 0, 7, 3, 0.5f, false });
 	}
 	{
 		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerDown");
 		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_AttackDown");
-		fb->SetInfo({ texture, L"FB_MoveDown", {200, 200}, 0, 7, 3, 0.5f });
+		fb->SetInfo({ texture, L"FB_MoveDown", {200, 200}, 0, 7, 3, 0.5f, false });
 	}
 	{
 		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerLeft");
 		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_AttackLeft");
-		fb->SetInfo({ texture, L"FB_MoveLeft", {200, 200}, 0, 7, 3, 0.5f });
+		fb->SetInfo({ texture, L"FB_MoveLeft", {200, 200}, 0, 7, 3, 0.5f, false });
 	}
 	{
 		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerRight");
 		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_AttackRight");
-		fb->SetInfo({ texture, L"FB_MoveRight", {200, 200}, 0, 7, 3, 0.5f });
+		fb->SetInfo({ texture, L"FB_MoveRight", {200, 200}, 0, 7, 3, 0.5f, false });
 	}
-
+	// BOW
 	{
-		Sprite* sprite = GET_SINGLE(ResourceManager)->GetSprite(L"Stage01");
-
-		SpriteActor* background = new SpriteActor();
-		background->SetSprite(sprite);
-		background->SetLayer(LAYER_BACKGROUND);
-		const VectorInt size = sprite->GetSize();
-		background->SetPos(Vector(size.x / 2, size.y / 2));
-
-		AddActor(background);
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerUp");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_BowUp");
+		fb->SetInfo({ texture, L"FB_BowUp", {200, 200}, 0, 7, 5, 0.5f, false });
 	}
-
 	{
-		Player* player = new Player();
-		//{
-		//	BoxCollider* collider = new BoxCollider();
-		//	collider->SetSize({ 100,100 });
-		//	collider->SetCollisionLayer(CLT_OBJECT);
-		//	collider->AddCollisionFlagLayer(CLT_GROUND);
-		//	//collider->AddCollisionFlagLayer(CLT_OBJECT);
-		//	//collider->SetRadius(50);
-		//	player->AddComponent(collider);
-		//	GET_SINGLE(CollisionManager)->AddCollider(collider);
-		//}
-		AddActor(player);
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerDown");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_BowDown");
+		fb->SetInfo({ texture, L"FB_BowDown", {200, 200}, 0, 7, 5, 0.5f, false });
 	}
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerLeft");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_BowLeft");
+		fb->SetInfo({ texture, L"FB_BowLeft", {200, 200}, 0, 7, 5, 0.5f, false });
+	}
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerRight");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_BowRight");
+		fb->SetInfo({ texture, L"FB_BowRight", {200, 200}, 0, 7, 5, 0.5f, false });
+	}
+	// STAFF
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerUp");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_StaffUp");
+		fb->SetInfo({ texture, L"FB_StaffUp", {200, 200}, 0, 10, 6, 0.5f, false });
+	}
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerDown");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_StaffDown");
+		fb->SetInfo({ texture, L"FB_StaffDown", {200, 200}, 0, 10, 6, 0.5f, false });
+	}
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerLeft");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_StaffLeft");
+		fb->SetInfo({ texture, L"FB_StaffLeft", {200, 200}, 0, 10, 6, 0.5f, false });
+	}
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerRight");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_StaffRight");
+		fb->SetInfo({ texture, L"FB_StaffRight", {200, 200}, 0, 10, 6, 0.5f, false });
+	}
+}
 
-	//{
-	//	Actor* player = new Actor();
-	//	player->SetLayer(LAYER_OBJECT);
-	//	player->SetPos({ 500,200 });
-	//	{
-	//		BoxCollider* collider = new BoxCollider();
-	//		collider->SetSize({ 100,100 });
-	//		collider->SetCollisionLayer(CLT_GROUND);
-	//		player->SetPos({ 400,200 });
-	//		player->AddComponent(collider);
-	//		GET_SINGLE(CollisionManager)->AddCollider(collider);
-	//	}
-	//	AddActor(player);
-	//}
+void DevScene::LoadMonster()
+{
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Snake");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_SnakeUp");
+		fb->SetInfo({ texture, L"FB_SnakeUp", {200, 200}, 0, 3, 3, 0.5f, false });
+	}
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Snake");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_SnakeDown");
+		fb->SetInfo({ texture, L"FB_SnakeDown", {200, 200}, 0, 3, 0, 0.5f, false });
+	}
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Snake");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_SnakeLeft");
+		fb->SetInfo({ texture, L"FB_SnakeLeft", {200, 200}, 0, 3, 2, 0.5f, false });
+	}
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Snake");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_SnakeRight");
+		fb->SetInfo({ texture, L"FB_SnakeRight", {200, 200}, 0, 3, 1, 0.5f, false });
+	}
+}
 
-	//{
-	//	Actor* player = new Actor();
-	//	player->SetLayer(LAYER_OBJECT);
-	//	player->SetPos({ 200,400 });
-	//	{
-	//		BoxCollider* collider = new BoxCollider();
-	//		collider->SetSize({ 10000,100 });
-	//		collider->SetCollisionLayer(CLT_GROUND);
-	//		uint32 flag = 0;
+void DevScene::LoadProjectile()
+{
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Arrow");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_ArrowUp");
+		fb->SetInfo({ texture, L"FB_ArrowUp", {200, 200}, 0, 3, 3, 0.5f, false });
+	}
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Arrow");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_ArrowDown");
+		fb->SetInfo({ texture, L"FB_ArrowDown", {200, 200}, 0, 3, 0, 0.5f, false });
+	}
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Arrow");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_ArrowLeft");
+		fb->SetInfo({ texture, L"FB_ArrowLeft", {200, 200}, 0, 3, 2, 0.5f, false });
+	}
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Arrow");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_ArrowRight");
+		fb->SetInfo({ texture, L"FB_ArrowRight", {200, 200}, 0, 3, 1, 0.5f, false });
+	}
+}
 
-	//		collider->SetCollsionFlag(flag);
+void DevScene::LoadEffect()
+{
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Hit");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_Hit");
+		fb->SetInfo({ texture, L"FB_Hit", {200, 200}, 0, 3, 3, 0.5f, false });
+	}
+}
 
-	//		player->AddComponent(collider);
-	//		GET_SINGLE(CollisionManager)->AddCollider(collider);
-	//	}
-	//	AddActor(player);
-	//}
-
-	//{
-	//	TestPanel* ui = new TestPanel();
-	//	_uis.push_back(ui);
-	//}
-
+void DevScene::LoadTilemap()
+{
 	{
 		TileMapActor* actor = new TileMapActor();
 		AddActor(actor);
@@ -205,54 +358,12 @@ void DevScene::Init()
 			_tilemapActor->SetShowDebug(false);
 		}
 	}
-
-	GET_SINGLE(ResourceManager)->LoadSound(L"BGM", L"Sound\\BGM.wav");
-	{
-		//Sound* sound = GET_SINGLE(ResourceManager)->GetSound(L"BGM");
-		//sound->Play(true);
-
-		//GET_SINGLE(SoundManager)->Play(L"BGM");
-	}
-
-	for (const vector<Actor*>& actors : _actors)
-	{
-		for (Actor* actor : actors)
-			actor->BeginPlay();
-	}
-
-	for (UI* ui : _uis)
-		ui->BeginPlay();
-
-	Super::Init();
-	//_go->Start();
-}
-
-void DevScene::Update()
-{
-	Super::Update();
-
-	float deltaTime = GET_SINGLE(TimeManager)->GetDeltaTime();
-	// 거리 = 시간 * 속도
-
-	if (GET_SINGLE(InputManager)->GetButtonDown(KeyType::Q))
-	{
-		GET_SINGLE(ResourceManager)->SaveTilemap(L"Tilemap_01", L"Tilemap\\Tilemap01.txt");
-	}
-	else if (GET_SINGLE(InputManager)->GetButtonDown(KeyType::E))
-	{
-		GET_SINGLE(ResourceManager)->LoadTilemap(L"Tilemap_01", L"Tilemap\\Tilemap01.txt");
-	}
-}
-
-void DevScene::Render(HDC hdc)
-{
-	Super::Render(hdc);
 }
 
 bool DevScene::CanGo(VectorInt cellPos)
 {
-	if(_tilemapActor == nullptr)
-	return false;
+	if (_tilemapActor == nullptr)
+		return false;
 
 	TileMap* tm = _tilemapActor->GetTilemap();
 	if (tm == nullptr)
