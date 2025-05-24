@@ -16,6 +16,9 @@ public:
 	virtual void Update() override;
 	virtual void Render(HDC hdc) override;
 
+	virtual void AddActor(Actor* actor) override;
+	virtual void RemoveActor(Actor* actor) override;
+
 	void LoadMap();
 	void LoadPlayer();
 	void LoadMonster();
@@ -40,8 +43,16 @@ public:
 		return ret;
 	}
 
+	template<typename T>
+	T* SpawnOnjectAtRandomPos()
+	{
+		VectorInt randPos = GetRandomEmptyCellPos();
+		return SpawnObject<T>(randPos);
+	}
+
 	bool CanGo(VectorInt cellPos);
 	Vector ConvertPos(VectorInt cellPos);
+	VectorInt GetRandomEmptyCellPos();
 
 	//	void AddActor(Actor* actor);
 	//	void RemoveActor(Actor* actor);
@@ -59,5 +70,13 @@ public:
 	//	vector<UI*> _uis;
 	//
 	//	GameObject* _go;
+
+private:
+	void TickMonsterSpawn();
+
+private:
+	const int32 DESIRED_MONSTER_COUNT = 20;
+	int32 _monsterCount = 0;
+
 	class TileMapActor* _tilemapActor = nullptr;
 };

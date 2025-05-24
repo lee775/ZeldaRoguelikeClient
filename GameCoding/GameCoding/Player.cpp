@@ -9,6 +9,7 @@
 #include "BoxCollider.h"
 #include "DevScene.h"
 #include "SceneManager.h"
+#include "HitEffect.h"
 
 Player::Player()
 {
@@ -44,6 +45,11 @@ Player::Player()
 
 	CameraComponent* camera = new CameraComponent();
 	AddComponent(camera);
+
+	_status.hp = 100;
+	_status.maxHp = 100;
+	_status.attack = 30;
+	_status.defence = 5;
 }
 
 Player::~Player()
@@ -267,6 +273,27 @@ void Player::TickSkill()
 	if (IsAnimationEnded())
 	{
 		// TODO : Damage
+		DevScene* scene = dynamic_cast<DevScene*>(GET_SINGLE(SceneManager)->GetCurrentScene());
+		if (scene == nullptr)
+			return;
+
+		if (_weaponType == WeaponType::Sword)
+		{
+			Creature* creature = scene->GetCreatureAt(GetFrontCellPos());
+			if (creature)
+			{
+				scene->SpawnObject<HitEffect>(GetFrontCellPos());
+				creature->OnDamaged(this);
+			}
+		}
+		else if (_weaponType == WeaponType::Bow)
+		{
+
+		}
+		else if (_weaponType == WeaponType::Staff)
+		{
+
+		}
 
 		SetState(ObjectState::Idle);
 	}

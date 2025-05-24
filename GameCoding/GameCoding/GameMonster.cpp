@@ -16,6 +16,11 @@ GameMonster::GameMonster()
 	_flipbookMove[DIR_DOWN] = GET_SINGLE(ResourceManager)->GetFlipbook(L"FB_SnakeDown");
 	_flipbookMove[DIR_LEFT] = GET_SINGLE(ResourceManager)->GetFlipbook(L"FB_SnakeLeft");
 	_flipbookMove[DIR_RIGHT] = GET_SINGLE(ResourceManager)->GetFlipbook(L"FB_SnakeRight");
+
+	_status.hp = 50;
+	_status.maxHp = 50;
+	_status.attack = 10;
+	_status.defence = 0;
 }
 
 GameMonster::~GameMonster()
@@ -46,17 +51,30 @@ void GameMonster::Render(HDC hdc)
 
 void GameMonster::TickIdle()
 {
+
 }
 
 void GameMonster::TickMove()
 {
+
 }
 
 void GameMonster::TickSkill()
 {
+
 }
 
 void GameMonster::UpdateAnimation()
 {
 	SetFlipbook(_flipbookMove[_dir]);
+}
+
+void GameMonster::OnDamaged(Creature* attacker)
+{
+	Super::OnDamaged(attacker);
+
+	if (_state == ObjectState::Idle)
+	{
+
+	}
 }

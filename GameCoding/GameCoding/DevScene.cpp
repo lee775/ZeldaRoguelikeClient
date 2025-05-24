@@ -155,11 +155,31 @@ void DevScene::Update()
 	{
 		GET_SINGLE(ResourceManager)->LoadTilemap(L"Tilemap_01", L"Tilemap\\Tilemap01.txt");
 	}
+
+	TickMonsterSpawn();
 }
 
 void DevScene::Render(HDC hdc)
 {
 	Super::Render(hdc);
+}
+
+void DevScene::AddActor(Actor* actor)
+{
+	Super::AddActor(actor);
+
+	GameMonster* monster = dynamic_cast<GameMonster*>(actor);
+	if (monster)
+		_monsterCount++;
+}
+
+void DevScene::RemoveActor(Actor* actor)
+{
+	Super::RemoveActor(actor);
+
+	GameMonster* monster = dynamic_cast<GameMonster*>(actor);
+	if (monster)
+		_monsterCount--;
 }
 
 void DevScene::LoadMap()
@@ -400,4 +420,38 @@ Vector DevScene::ConvertPos(VectorInt cellPos)
 	ret.y = pos.y + cellPos.y * size + (size / 2);
 
 	return ret;
+}
+
+VectorInt DevScene::GetRandomEmptyCellPos()
+{
+	VectorInt ret = { -1,-1 };
+
+	if (_tilemapActor == nullptr)
+		return ret;
+
+	TileMap* tm = _tilemapActor->GetTilemap();
+	if (tm == nullptr)
+		return ret;
+
+	VectorInt size = tm->GetMapSize();
+	
+	// 몇번이나 시도 할지는 정책을 정해야함 (매우 오래 걸릴 수 있음)
+	while (true)
+	{
+		int32 x = rand() % size.x;
+		int32 y = rand() % size.y;
+		VectorInt cellPos{ x,y };
+
+		if (CanGo(cellPos))
+			return cellPos;
+	}
+
+
+	return ret;
+}
+
+void DevScene::TickMonsterSpawn()
+{
+	if (_monsterCount < DESIRED_MONSTER_COUNT)
+		SpawnOnjectAtRandomPos<GameMonster>();
 }

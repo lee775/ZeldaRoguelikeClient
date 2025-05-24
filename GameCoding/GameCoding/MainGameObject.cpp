@@ -91,6 +91,23 @@ void MainGameObject::SetCellPos(VectorInt cellPos, bool teleport)
 		_pos = _destPos;
 }
 
+VectorInt MainGameObject::GetFrontCellPos()
+{
+	switch (_dir)
+	{
+	case DIR_UP:
+		return _cellPos + VectorInt{ 0,-1 };
+	case DIR_DOWN:
+		return _cellPos + VectorInt{ 0,1 };
+	case DIR_LEFT:
+		return _cellPos + VectorInt{ -1,0 };
+	case DIR_RIGHT:
+		return _cellPos + VectorInt{ 1,0 };
+	}
+
+	return _cellPos;
+}
+
 void MainGameObject::AdjustCollisionPos(BoxCollider* b1, BoxCollider* b2)
 {
 	RECT r1 = b1->GetRect();

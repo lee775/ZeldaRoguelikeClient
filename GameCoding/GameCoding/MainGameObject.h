@@ -33,6 +33,7 @@ public:
 
 	bool CanGo(VectorInt cellPos);
 	void SetCellPos(VectorInt cellPos, bool teleport = false);
+	VectorInt GetFrontCellPos();
 
 
 private:
