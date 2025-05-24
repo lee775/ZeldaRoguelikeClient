@@ -375,6 +375,10 @@ bool DevScene::CanGo(VectorInt cellPos)
 	if (tile == nullptr)
 		return false;
 
+	// 몬스터 충돌?
+	if (GetCreatureAt(cellPos) != nullptr)
+		return false;
+
 	return tile->value != 1;
 }
 
