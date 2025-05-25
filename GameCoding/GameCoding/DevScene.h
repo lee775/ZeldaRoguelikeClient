@@ -4,6 +4,18 @@
 class Actor;
 class MainGameObject;
 class UI;
+class Player;
+
+struct PQNode
+{
+	PQNode(int32 cost, VectorInt pos) : cost(cost), pos(pos) {}
+
+	bool operator<(const PQNode& other) const { return cost < other.cost; }
+	bool operator>(const PQNode& other) const { return cost > other.cost; }
+
+	int32 cost;
+	VectorInt pos;
+};
 
 class DevScene : public Scene
 {
@@ -50,6 +62,10 @@ public:
 		return SpawnObject<T>(randPos);
 	}
 
+	Player* FindClosestPlayer(VectorInt cellPos);
+
+	bool FindPath(VectorInt src, VectorInt dest, vector<VectorInt>& path, int32 maxDepth = 10);
+
 	bool CanGo(VectorInt cellPos);
 	Vector ConvertPos(VectorInt cellPos);
 	VectorInt GetRandomEmptyCellPos();
@@ -75,7 +91,7 @@ private:
 	void TickMonsterSpawn();
 
 private:
-	const int32 DESIRED_MONSTER_COUNT = 20;
+	const int32 DESIRED_MONSTER_COUNT = 20; 
 	int32 _monsterCount = 0;
 
 	class TileMapActor* _tilemapActor = nullptr;

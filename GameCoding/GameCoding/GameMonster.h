@@ -1,6 +1,8 @@
 #pragma once
 #include "Creature.h"
 
+class Player;
+
 class GameMonster : public Creature
 {
 	using Super = Creature;
@@ -23,5 +25,8 @@ private:
 protected:
 	Flipbook* _flipbookMove[4] = {};
 	//Flipbook* _flipbookAttack[4] = {};
+
+	// TEMP
+	Player* _target = nullptr;
 };
 

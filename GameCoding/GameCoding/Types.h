@@ -79,6 +79,21 @@ struct Vector
 		return x != other.x || y != other.y;
 	}
 
+	bool operator<(const Vector& other) const
+	{
+		if (x != other.x)
+			return x < other.x;
+
+		return y < other.y;
+	}
+	bool operator>(const Vector& other) const
+	{
+		if (x != other.x)
+			return x > other.x;
+
+		return y > other.y;
+	}
+
 	float LengthSquared()
 	{
 		return x * x + y * y;
@@ -171,6 +186,21 @@ struct VectorInt
 	{
 		x *= value;
 		y *= value;
+	}
+
+	bool operator<(const VectorInt& other) const
+	{
+		if (x != other.x)
+			return x < other.x;
+
+		return y < other.y;
+	}
+	bool operator>(const VectorInt& other) const
+	{
+		if (x != other.x)
+			return x > other.x;
+
+		return y > other.y;
 	}
 
 	float LengthSquared()

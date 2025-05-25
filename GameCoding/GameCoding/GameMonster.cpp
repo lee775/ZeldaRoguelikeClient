@@ -9,6 +9,7 @@
 #include "BoxCollider.h"
 #include "DevScene.h"
 #include "SceneManager.h"
+#include "Player.h"
 
 GameMonster::GameMonster()
 {
@@ -51,12 +52,69 @@ void GameMonster::Render(HDC hdc)
 
 void GameMonster::TickIdle()
 {
+	DevScene* scene = dynamic_cast<DevScene*>(GET_SINGLE(SceneManager)->GetCurrentScene());
+	if (scene == nullptr)
+		return;
 
+	// Find Player
+	if (_target == nullptr)
+		_target = scene->FindClosestPlayer(GetCellPos());
+
+	if (_target)
+	{
+		vector<VectorInt> path;
+		if (scene->FindPath(GetCellPos(), _target->GetCellPos(), OUT path))
+		{
+			if (path.size() > 1)
+			{
+				VectorInt nextPos = path[1];
+				if (scene->CanGo(nextPos))
+				{
+					SetCellPos(nextPos);
+					SetState(ObjectState::Move);
+				}
+			}
+			else
+				SetCellPos(path[0]);
+		}
+	}
 }
 
 void GameMonster::TickMove()
 {
+	float deltaTime = GET_SINGLE(TimeManager)->GetDeltaTime();
 
+	// 어느 정도 거리 이상으로 왔으면 도착했다고 인지를 하는 부분
+	Vector dir = (_destPos - _pos);
+	if (dir.Length() < 5.f)
+	{
+		SetState(ObjectState::Idle);
+		_pos = _destPos;
+	}
+	else
+	{
+		bool horizontal = abs(dir.x) > abs(dir.y);
+		if (horizontal)
+			SetDir(dir.x < 0 ? DIR_LEFT : DIR_RIGHT);
+		else
+			SetDir(dir.y < 0 ? DIR_UP : DIR_DOWN);
+
+		switch (_dir)
+		{
+		case DIR_UP:
+			_pos.y -= 50 * deltaTime;
+			break;
+		case DIR_DOWN:
+			_pos.y += 50 * deltaTime;
+			break;
+		case DIR_LEFT:
+			_pos.x -= 50 * deltaTime;
+			break;
+		case DIR_RIGHT:
+			_pos.x += 50 * deltaTime;
+			break;
+		}
+	}
 }
 
 void GameMonster::TickSkill()
