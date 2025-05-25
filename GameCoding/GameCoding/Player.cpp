@@ -10,6 +10,7 @@
 #include "DevScene.h"
 #include "SceneManager.h"
 #include "HitEffect.h"
+#include "Arrow.h"
 
 Player::Player()
 {
@@ -288,7 +289,8 @@ void Player::TickSkill()
 		}
 		else if (_weaponType == WeaponType::Bow)
 		{
-
+			Arrow* arrow = scene->SpawnObject<Arrow>(_cellPos);
+			arrow->SetDir(_dir);
 		}
 		else if (_weaponType == WeaponType::Staff)
 		{

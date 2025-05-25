@@ -1,6 +1,8 @@
 #pragma once
 #include "MainGameObject.h"
 
+class Creature;
+
 class Projectile : public MainGameObject
 {
 	using Super = MainGameObject;
@@ -18,5 +20,8 @@ protected:
 	virtual void TickMove() override;
 	virtual void TickSkill() override;
 	virtual void UpdateAnimation() override;
+
+protected:
+	//Creature* _owner; // TEMP
 };
 

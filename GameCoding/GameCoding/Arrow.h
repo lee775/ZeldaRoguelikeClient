@@ -16,7 +16,9 @@ public:
 protected:
 	virtual void TickIdle() override;
 	virtual void TickMove() override;
-	virtual void TickSkill() override;
 	virtual void UpdateAnimation() override;
+
+private :
+	Flipbook* _flipbookMove[4] = {};
 };
 
