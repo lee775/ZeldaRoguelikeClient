@@ -32,6 +32,8 @@ public:
 	void SetDir(Dir dir);
 
 	bool CanGo(VectorInt cellPos);
+	Dir GetLookAtDir(VectorInt cellPos);
+
 	void SetCellPos(VectorInt cellPos, bool teleport = false);
 	VectorInt GetFrontCellPos();
 

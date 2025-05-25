@@ -10,6 +10,7 @@
 #include "DevScene.h"
 #include "SceneManager.h"
 #include "Player.h"
+#include "HitEffect.h"
 
 GameMonster::GameMonster()
 {
@@ -62,20 +63,32 @@ void GameMonster::TickIdle()
 
 	if (_target)
 	{
-		vector<VectorInt> path;
-		if (scene->FindPath(GetCellPos(), _target->GetCellPos(), OUT path))
+		VectorInt dir = _target->GetCellPos() - GetCellPos();
+		int32 dist = abs(dir.x) + abs(dir.y);
+		if (dist == 1)
 		{
-			if (path.size() > 1)
+			// 공격
+			SetDir(GetLookAtDir(_target->GetCellPos()));
+			SetState(ObjectState::Skill);
+			_waitSeconds = 0.5f; // 공격 종료 시간
+		}
+		else
+		{
+			vector<VectorInt> path;
+			if (scene->FindPath(GetCellPos(), _target->GetCellPos(), OUT path))
 			{
-				VectorInt nextPos = path[1];
-				if (scene->CanGo(nextPos))
+				if (path.size() > 1)
 				{
-					SetCellPos(nextPos);
-					SetState(ObjectState::Move);
+					VectorInt nextPos = path[1];
+					if (scene->CanGo(nextPos))
+					{
+						SetCellPos(nextPos);
+						SetState(ObjectState::Move);
+					}
 				}
+				else
+					SetCellPos(path[0]);
 			}
-			else
-				SetCellPos(path[0]);
 		}
 	}
 }
@@ -119,7 +132,28 @@ void GameMonster::TickMove()
 
 void GameMonster::TickSkill()
 {
+	if (_flipbook == nullptr)
+		return;
 
+	if (_waitSeconds > 0)
+	{
+		float deltaTime = GET_SINGLE(TimeManager)->GetDeltaTime();
+		_waitSeconds = max(0, _waitSeconds - deltaTime);
+		return;
+	}
+
+	DevScene* scene = dynamic_cast<DevScene*>(GET_SINGLE(SceneManager)->GetCurrentScene());
+	if (scene == nullptr)
+		return;
+
+	Creature* creature = scene->GetCreatureAt(GetFrontCellPos());
+	if (creature)
+	{
+		scene->SpawnObject<HitEffect>(GetFrontCellPos());
+		creature->OnDamaged(this);
+	}
+
+	SetState(ObjectState::Idle);
 }
 
 void GameMonster::UpdateAnimation()

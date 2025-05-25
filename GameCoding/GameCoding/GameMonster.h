@@ -24,6 +24,7 @@ private:
 
 protected:
 	Flipbook* _flipbookMove[4] = {};
+	float _waitSeconds = 0.f;
 	//Flipbook* _flipbookAttack[4] = {};
 
 	// TEMP
