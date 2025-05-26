@@ -93,6 +93,12 @@
     <Filter Include="소스 파일\03. Object\Game\Projectile">
       <UniqueIdentifier>{f5f45ed4-1373-454d-b97f-6cc29753052b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Protocol">
+      <UniqueIdentifier>{bf792093-7c8b-42a5-8cac-f6a7d3c6e47b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\07.Network">
+      <UniqueIdentifier>{ebe8ca83-1d1a-457e-8ee2-3c42dc1b2822}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameCoding.h">
@@ -266,6 +272,18 @@
     <ClInclude Include="Arrow.h">
       <Filter>소스 파일\03. Object\Game\Projectile</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\DummyClient\Enum.pb.h">
+      <Filter>소스 파일\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DummyClient\Protocol.pb.h">
+      <Filter>소스 파일\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DummyClient\Struct.pb.h">
+      <Filter>소스 파일\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DummyClient\ClientPacketHandler.h">
+      <Filter>소스 파일\07.Network</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="GameCoding.rc">
@@ -430,6 +448,18 @@
     </ClCompile>
     <ClCompile Include="Arrow.cpp">
       <Filter>소스 파일\03. Object\Game\Projectile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DummyClient\Enum.pb.cc">
+      <Filter>소스 파일\Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DummyClient\Protocol.pb.cc">
+      <Filter>소스 파일\Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DummyClient\Struct.pb.cc">
+      <Filter>소스 파일\Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DummyClient\ClientPacketHandler.cpp">
+      <Filter>소스 파일\07.Network</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
