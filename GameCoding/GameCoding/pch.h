@@ -42,3 +42,19 @@ namespace fs = std::filesystem;
 #include <dsound.h>
 #pragma comment(lib, "winmm.lib")
 #pragma comment(lib, "dsound.lib")
+
+#pragma once
+
+#include "CorePch.h"
+
+#include "Protocol.pb.h"
+#include "Enum.pb.h"
+#include "Struct.pb.h"
+
+#ifdef _DEBUG
+#pragma comment(lib, "ServerCore\\Debug\\ServerCore.lib")
+#pragma comment(lib, "Protobuf\\Debug\\libprotobufd.lib")
+#else
+#pragma comment(lib, "Protobuf\\Release\\libprotobuf.lib")
+#pragma comment(lib, "ServerCore\\Release\\ServerCore.lib")
+#endif
