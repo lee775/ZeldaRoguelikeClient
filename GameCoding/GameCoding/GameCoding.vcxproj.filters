@@ -149,17 +149,11 @@
     <ClInclude Include="GameScene.h">
       <Filter>소스 파일\02. Scene\Game</Filter>
     </ClInclude>
-    <ClInclude Include="EditScene.h">
-      <Filter>소스 파일\02. Scene\Game</Filter>
-    </ClInclude>
     <ClInclude Include="ResourceManager.h">
       <Filter>소스 파일\01. Manager</Filter>
     </ClInclude>
     <ClInclude Include="Values.h">
       <Filter>소스 파일\99. Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="LineMesh.h">
-      <Filter>소스 파일\04. Resources\Game\Disable</Filter>
     </ClInclude>
     <ClInclude Include="Bullet.h">
       <Filter>소스 파일\03. Object\Disable</Filter>
@@ -281,7 +275,10 @@
     <ClInclude Include="..\..\..\DummyClient\Struct.pb.h">
       <Filter>소스 파일\Protocol</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\DummyClient\ClientPacketHandler.h">
+    <ClInclude Include="ServerSession.h">
+      <Filter>소스 파일\07.Network</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientPacketHandler.h">
       <Filter>소스 파일\07.Network</Filter>
     </ClInclude>
   </ItemGroup>
@@ -301,9 +298,6 @@
   <ItemGroup>
     <ClCompile Include="GameCoding.cpp">
       <Filter>소스 파일\00. MainGame</Filter>
-    </ClCompile>
-    <ClCompile Include="pch.cpp">
-      <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Game.cpp">
       <Filter>소스 파일\00. MainGame</Filter>
@@ -326,14 +320,8 @@
     <ClCompile Include="GameScene.cpp">
       <Filter>소스 파일\02. Scene\Game</Filter>
     </ClCompile>
-    <ClCompile Include="EditScene.cpp">
-      <Filter>소스 파일\02. Scene\Game</Filter>
-    </ClCompile>
     <ClCompile Include="ResourceManager.cpp">
       <Filter>소스 파일\01. Manager</Filter>
-    </ClCompile>
-    <ClCompile Include="LineMesh.cpp">
-      <Filter>소스 파일\04. Resources\Game\Disable</Filter>
     </ClCompile>
     <ClCompile Include="Bullet.cpp">
       <Filter>소스 파일\03. Object\Disable</Filter>
@@ -458,8 +446,14 @@
     <ClCompile Include="..\..\..\DummyClient\Struct.pb.cc">
       <Filter>소스 파일\Protocol</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\DummyClient\ClientPacketHandler.cpp">
+    <ClCompile Include="ServerSession.cpp">
       <Filter>소스 파일\07.Network</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientPacketHandler.cpp">
+      <Filter>소스 파일\07.Network</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>소스 파일\99. Headers</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

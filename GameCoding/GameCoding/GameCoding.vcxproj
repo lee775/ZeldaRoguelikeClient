@@ -106,7 +106,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_SILENCE_CXX20_IS_POD_DEPRECATION_WARNING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -136,7 +136,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\DummyClient\ClientPacketHandler.h" />
     <ClInclude Include="..\..\..\DummyClient\Enum.pb.h" />
     <ClInclude Include="..\..\..\DummyClient\Protocol.pb.h" />
     <ClInclude Include="..\..\..\DummyClient\Struct.pb.h" />
@@ -146,13 +145,13 @@
     <ClInclude Include="Bullet.h" />
     <ClInclude Include="Button.h" />
     <ClInclude Include="CameraComponent.h" />
+    <ClInclude Include="ClientPacketHandler.h" />
     <ClInclude Include="Collider.h" />
     <ClInclude Include="CollisionManager.h" />
     <ClInclude Include="Component.h" />
     <ClInclude Include="Creature.h" />
     <ClInclude Include="Defines.h" />
     <ClInclude Include="DevScene.h" />
-    <ClInclude Include="EditScene.h" />
     <ClInclude Include="Enums.h" />
     <ClInclude Include="Flipbook.h" />
     <ClInclude Include="FlipbookActor.h" />
@@ -164,7 +163,6 @@
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="HitEffect.h" />
     <ClInclude Include="InputManager.h" />
-    <ClInclude Include="LineMesh.h" />
     <ClInclude Include="MainGameObject.h" />
     <ClInclude Include="Missile.h" />
     <ClInclude Include="Monster.h" />
@@ -180,6 +178,7 @@
     <ClInclude Include="ResourcesBase.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="ServerSession.h" />
     <ClInclude Include="Sound.h" />
     <ClInclude Include="SoundManager.h" />
     <ClInclude Include="SphereCollider.h" />
@@ -199,7 +198,6 @@
     <ClInclude Include="Values.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\DummyClient\ClientPacketHandler.cpp" />
     <ClCompile Include="..\..\..\DummyClient\Enum.pb.cc">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -215,12 +213,12 @@
     <ClCompile Include="Bullet.cpp" />
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="CameraComponent.cpp" />
+    <ClCompile Include="ClientPacketHandler.cpp" />
     <ClCompile Include="Collider.cpp" />
     <ClCompile Include="CollisionManager.cpp" />
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="Creature.cpp" />
     <ClCompile Include="DevScene.cpp" />
-    <ClCompile Include="EditScene.cpp" />
     <ClCompile Include="Flipbook.cpp" />
     <ClCompile Include="FlipbookActor.cpp" />
     <ClCompile Include="Game.cpp" />
@@ -230,7 +228,6 @@
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="HitEffect.cpp" />
     <ClCompile Include="InputManager.cpp" />
-    <ClCompile Include="LineMesh.cpp" />
     <ClCompile Include="MainGameObject.cpp" />
     <ClCompile Include="Missile.cpp" />
     <ClCompile Include="Monster.cpp" />
@@ -247,6 +244,7 @@
     <ClCompile Include="ResourcesBase.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="ServerSession.cpp" />
     <ClCompile Include="Sound.cpp" />
     <ClCompile Include="SoundManager.cpp" />
     <ClCompile Include="SphereCollider.cpp" />

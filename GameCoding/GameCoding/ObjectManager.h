@@ -1,33 +1,36 @@
 #pragma once
 
-class Object;
+class GameObject;
 
 class ObjectManager
 {
 	DECLARE_SINGLE(ObjectManager);
+
 public:
-	~ObjectManager();
-
-	void Add(Object* object);
-	void Remove(Object* object);
-	void Clear();
-
-	const vector<Object*>& GetObjects() { return _objects; }
-
 	template<typename T>
-	T* CreateObject()
+	T* AddObject()
 	{
-		// type trait
-		// T가 Object로 캐스팅 되는지 컴파일 타임에서 확인해줌
-		static_assert(std::is_convertible_v<T*, Object*>);
-
 		T* object = new T();
-		object->Init();
+
+		int64 id = _idGenerator++;
+		object->SetObjectID(id);
+		_objects[id] = object;
 
 		return object;
 	}
 
+	void RemoveObject(int64 id)
+	{
+		auto findIt = _objects.find(id);
+		if (findIt == _objects.end())
+			return;
+
+		_objects.erase(id);
+		// TODO : Delete?
+	}
+
 private:
-	vector<Object*> _objects;
+	int64 _idGenerator = 1;
+	unordered_map<int64, GameObject*> _objects;
 };
 

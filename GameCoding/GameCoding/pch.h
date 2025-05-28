@@ -1,30 +1,21 @@
 #pragma once
 
+#include "CorePch.h"
 #include "Types.h"
-#include "Enums.h"
-#include "Defines.h"
-#include <windows.h>
-#include <vector>
-#include <list>
-#include <map>
-#include <unordered_map>
-#include <queue>
-#include <string>
-#include <algorithm>
-#include <set>
-#include <unordered_set>
-#include <functional>
-#include <assert.h>
-
-#include "Utils.h"
 #include "Values.h"
+#include "Defines.h"
+#include "Enums.h"
+#include "Utils.h"
 
-using namespace std;
+#include "Protocol.pb.h"
+#include "Enum.pb.h"
+#include "Struct.pb.h"
+#include <assert.h>
+#include "ClientPacketHandler.h"
 
 // C++20
 #include <format>
 #include <filesystem>
-
 namespace fs = std::filesystem;
 
 #define _CRTDEBG_MAP_ALLOC
@@ -43,13 +34,9 @@ namespace fs = std::filesystem;
 #pragma comment(lib, "winmm.lib")
 #pragma comment(lib, "dsound.lib")
 
-#pragma once
-
-#include "CorePch.h"
-
-#include "Protocol.pb.h"
-#include "Enum.pb.h"
-#include "Struct.pb.h"
+#include <string>
+#include <algorithm>
+#include <functional>
 
 #ifdef _DEBUG
 #pragma comment(lib, "ServerCore\\Debug\\ServerCore.lib")
@@ -58,3 +45,5 @@ namespace fs = std::filesystem;
 #pragma comment(lib, "Protobuf\\Release\\libprotobuf.lib")
 #pragma comment(lib, "ServerCore\\Release\\ServerCore.lib")
 #endif
+
+

@@ -138,7 +138,7 @@ void GameMonster::TickSkill()
 	if (_waitSeconds > 0)
 	{
 		float deltaTime = GET_SINGLE(TimeManager)->GetDeltaTime();
-		_waitSeconds = max(0, _waitSeconds - deltaTime);
+		_waitSeconds = max(0, static_cast<int32>(_waitSeconds - deltaTime));
 		return;
 	}
 
