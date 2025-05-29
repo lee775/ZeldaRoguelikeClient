@@ -36,9 +36,6 @@
     <Filter Include="소스 파일\04. Resources\Game">
       <UniqueIdentifier>{6749de15-6bca-4f03-99e9-71ded1ebc5f6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\01. Manager\Game">
-      <UniqueIdentifier>{9857415f-c835-4d32-920e-9d3efe4397c9}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\02. Scene\Game\Fortress">
       <UniqueIdentifier>{b9b4187c-9c01-40fd-b2e6-b3450d1130bd}</UniqueIdentifier>
     </Filter>
@@ -99,6 +96,12 @@
     <Filter Include="소스 파일\07.Network">
       <UniqueIdentifier>{ebe8ca83-1d1a-457e-8ee2-3c42dc1b2822}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\07.Network\Game">
+      <UniqueIdentifier>{9857415f-c835-4d32-920e-9d3efe4397c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01. Manager\Game">
+      <UniqueIdentifier>{a9bef03c-dcda-4f8f-b4ad-fdb5b474ad87}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameCoding.h">
@@ -146,32 +149,11 @@
     <ClInclude Include="DevScene.h">
       <Filter>소스 파일\02. Scene\Game</Filter>
     </ClInclude>
-    <ClInclude Include="GameScene.h">
-      <Filter>소스 파일\02. Scene\Game</Filter>
-    </ClInclude>
     <ClInclude Include="ResourceManager.h">
       <Filter>소스 파일\01. Manager</Filter>
     </ClInclude>
     <ClInclude Include="Values.h">
       <Filter>소스 파일\99. Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="Bullet.h">
-      <Filter>소스 파일\03. Object\Disable</Filter>
-    </ClInclude>
-    <ClInclude Include="Missile.h">
-      <Filter>소스 파일\03. Object\Disable</Filter>
-    </ClInclude>
-    <ClInclude Include="Monster.h">
-      <Filter>소스 파일\03. Object\Disable</Filter>
-    </ClInclude>
-    <ClInclude Include="Object.h">
-      <Filter>소스 파일\03. Object\Disable</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjectManager.h">
-      <Filter>소스 파일\01. Manager\Disable</Filter>
-    </ClInclude>
-    <ClInclude Include="UIManager.h">
-      <Filter>소스 파일\01. Manager\Disable</Filter>
     </ClInclude>
     <ClInclude Include="Actor.h">
       <Filter>소스 파일\03. Object\Unreal</Filter>
@@ -281,6 +263,12 @@
     <ClInclude Include="ClientPacketHandler.h">
       <Filter>소스 파일\07.Network</Filter>
     </ClInclude>
+    <ClInclude Include="ObjectManager.h">
+      <Filter>소스 파일\01. Manager\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkManager.h">
+      <Filter>소스 파일\01. Manager\Game</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="GameCoding.rc">
@@ -317,29 +305,8 @@
     <ClCompile Include="Scene.cpp">
       <Filter>소스 파일\02. Scene</Filter>
     </ClCompile>
-    <ClCompile Include="GameScene.cpp">
-      <Filter>소스 파일\02. Scene\Game</Filter>
-    </ClCompile>
     <ClCompile Include="ResourceManager.cpp">
       <Filter>소스 파일\01. Manager</Filter>
-    </ClCompile>
-    <ClCompile Include="Bullet.cpp">
-      <Filter>소스 파일\03. Object\Disable</Filter>
-    </ClCompile>
-    <ClCompile Include="Missile.cpp">
-      <Filter>소스 파일\03. Object\Disable</Filter>
-    </ClCompile>
-    <ClCompile Include="Monster.cpp">
-      <Filter>소스 파일\03. Object\Disable</Filter>
-    </ClCompile>
-    <ClCompile Include="Object.cpp">
-      <Filter>소스 파일\03. Object\Disable</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjectManager.cpp">
-      <Filter>소스 파일\01. Manager\Disable</Filter>
-    </ClCompile>
-    <ClCompile Include="UIManager.cpp">
-      <Filter>소스 파일\01. Manager\Disable</Filter>
     </ClCompile>
     <ClCompile Include="Actor.cpp">
       <Filter>소스 파일\03. Object\Unreal</Filter>
@@ -454,6 +421,12 @@
     </ClCompile>
     <ClCompile Include="pch.cpp">
       <Filter>소스 파일\99. Headers</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectManager.cpp">
+      <Filter>소스 파일\01. Manager\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkManager.cpp">
+      <Filter>소스 파일\01. Manager\Game</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

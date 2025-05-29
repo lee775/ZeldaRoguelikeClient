@@ -2,16 +2,18 @@
 
 enum
 {
-	S_TEST = 1
+	S_TEST = 1,
+	S_EnterGame
 };
 
 class ClientPacketHandler
 {
 public:
-	static void HandlePacket(BYTE* buffer, int32 len);
+	static void HandlePacket(ServerSessionRef session, BYTE* buffer, int32 len);
 
 	// 받기
-	static void Handle_S_TEST(BYTE* buffer, int32 len);
+	static void Handle_S_TEST(ServerSessionRef session, BYTE* buffer, int32 len);
+	static void Handle_S_EnterGame(ServerSessionRef session, BYTE* buffer, int32 len);
 
 	// 보내기
 	template<typename T>

@@ -2,7 +2,7 @@
 #include "ClientPacketHandler.h"
 #include "BufferReader.h"
 
-void ClientPacketHandler::HandlePacket(BYTE* buffer, int32 len)
+void ClientPacketHandler::HandlePacket(ServerSessionRef session, BYTE* buffer, int32 len)
 {
 	BufferReader br(buffer, len);
 
@@ -12,8 +12,10 @@ void ClientPacketHandler::HandlePacket(BYTE* buffer, int32 len)
 	switch (header.id)
 	{
 	case S_TEST:
-		Handle_S_TEST(buffer, len);
+		Handle_S_TEST(session, buffer, len);
 		break;
+	case S_EnterGame:
+		Handle_S_EnterGame(session, buffer, len);
 	}
 }
 
@@ -50,7 +52,7 @@ void ClientPacketHandler::HandlePacket(BYTE* buffer, int32 len)
 //	// TODO
 //}
 
-void ClientPacketHandler::Handle_S_TEST(BYTE* buffer, int32 len)
+void ClientPacketHandler::Handle_S_TEST(ServerSessionRef session, BYTE* buffer, int32 len)
 {
 	PacketHeader* header = (PacketHeader*)buffer;
 	//uint16 id = header->id;
@@ -70,5 +72,18 @@ void ClientPacketHandler::Handle_S_TEST(BYTE* buffer, int32 len)
 		const Protocol::BuffData& data = pkt.buffs(i);
 		cout << "BuffInfo : " << data.buffid() << " " << data.remaintime() << endl;
 	}
+}
+
+void ClientPacketHandler::Handle_S_EnterGame(ServerSessionRef session, BYTE* buffer, int32 len)
+{
+	PacketHeader* header = (PacketHeader*)buffer;
+	//uint16 id = header->id;
+	uint16 size = header->size;
+
+	Protocol::S_EnterGame pkt;
+	pkt.ParseFromArray(&header[1], size - sizeof(PacketHeader));
+
+	bool success = pkt.success();
+	uint64 accountId = pkt.accountid();
 }
 

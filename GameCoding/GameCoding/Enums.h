@@ -17,15 +17,6 @@ enum class PlayerType
 	MissileTank
 };
 
-enum Dir
-{
-	DIR_UP,
-	DIR_DOWN,
-	DIR_LEFT,
-	DIR_RIGHT,
-	
-};
-
 enum LAYER_TYPE
 {
 	LAYER_BACKGROUND,
@@ -51,6 +42,15 @@ enum COLLISION_LAYER_TYPE
 
 
 	CLT_MAX
+};
+
+enum Dir
+{
+	DIR_UP,
+	DIR_DOWN,
+	DIR_LEFT,
+	DIR_RIGHT,
+	
 };
 
 enum class ObjectState
