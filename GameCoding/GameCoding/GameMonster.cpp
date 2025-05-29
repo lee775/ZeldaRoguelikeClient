@@ -33,8 +33,8 @@ void GameMonster::BeginPlay()
 {
 	Super::BeginPlay();
 
-	SetState(ObjectState::Move);
-	SetState(ObjectState::Idle);
+	SetState(MOVE);
+	SetState(IDLE);
 }
 
 void GameMonster::Tick()
@@ -69,7 +69,7 @@ void GameMonster::TickIdle()
 		{
 			// 공격
 			SetDir(GetLookAtDir(_target->GetCellPos()));
-			SetState(ObjectState::Skill);
+			SetState(SKILL);
 			_waitSeconds = 0.5f; // 공격 종료 시간
 		}
 		else
@@ -83,7 +83,7 @@ void GameMonster::TickIdle()
 					if (scene->CanGo(nextPos))
 					{
 						SetCellPos(nextPos);
-						SetState(ObjectState::Move);
+						SetState(MOVE);
 					}
 				}
 				else
@@ -101,7 +101,7 @@ void GameMonster::TickMove()
 	Vector dir = (_destPos - _pos);
 	if (dir.Length() < 5.f)
 	{
-		SetState(ObjectState::Idle);
+		SetState(IDLE);
 		_pos = _destPos;
 	}
 	else
@@ -112,7 +112,7 @@ void GameMonster::TickMove()
 		else
 			SetDir(dir.y < 0 ? DIR_UP : DIR_DOWN);
 
-		switch (_dir)
+		switch (info.dir())
 		{
 		case DIR_UP:
 			_pos.y -= 50 * deltaTime;
@@ -153,19 +153,19 @@ void GameMonster::TickSkill()
 		creature->OnDamaged(this);
 	}
 
-	SetState(ObjectState::Idle);
+	SetState(IDLE);
 }
 
 void GameMonster::UpdateAnimation()
 {
-	SetFlipbook(_flipbookMove[_dir]);
+	SetFlipbook(_flipbookMove[info.dir()]);
 }
 
 void GameMonster::OnDamaged(Creature* attacker)
 {
 	Super::OnDamaged(attacker);
 
-	if (_state == ObjectState::Idle)
+	if (info.state() == IDLE)
 	{
 
 	}

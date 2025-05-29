@@ -23,8 +23,8 @@ void MainGameObject::BeginPlay()
 {
 	Super::BeginPlay();
 
-	SetState(ObjectState::Move);
-	SetState(ObjectState::Idle);
+	SetState(MOVE);
+	SetState(IDLE);
 }
 
 void MainGameObject::Tick()
@@ -32,15 +32,15 @@ void MainGameObject::Tick()
 	Super::Tick();
 
 	// TODO
-	switch (_state)
+	switch (info.state())
 	{
-	case ObjectState::Idle:
+	case IDLE:
 		TickIdle();
 		break;
-	case ObjectState::Move:
+	case MOVE:
 		TickMove();
 		break;
-	case ObjectState::Skill:
+	case SKILL:
 		TickSkill();
 		break;
 	}
@@ -53,18 +53,23 @@ void MainGameObject::Render(HDC hdc)
 	Super::Render(hdc);
 }
 
+VectorInt MainGameObject::GetCellPos()
+{
+	return VectorInt{info.posx(), info.posy() };
+}
+
 void MainGameObject::SetState(ObjectState state)
 {
-	if (_state == state)
+	if (info.state() == state)
 		return;
 
-	_state = state;
+	info.set_state(state);
 	UpdateAnimation();
 }
 
 void MainGameObject::SetDir(Dir dir)
 {
-	_dir = dir;
+	info.set_dir(dir);
 	UpdateAnimation();
 }
 
@@ -92,7 +97,8 @@ Dir MainGameObject::GetLookAtDir(VectorInt cellPos)
 
 void MainGameObject::SetCellPos(VectorInt cellPos, bool teleport)
 {
-	_cellPos = cellPos;
+	info.set_posx(cellPos.x);
+	info.set_posy(cellPos.y);
 
 	DevScene* scene = dynamic_cast<DevScene*>(GET_SINGLE(SceneManager)->GetCurrentScene());
 	if (scene == nullptr)
@@ -106,19 +112,19 @@ void MainGameObject::SetCellPos(VectorInt cellPos, bool teleport)
 
 VectorInt MainGameObject::GetFrontCellPos()
 {
-	switch (_dir)
+	switch (info.dir())
 	{
 	case DIR_UP:
-		return _cellPos + VectorInt{ 0,-1 };
+		return GetCellPos() + VectorInt{0,-1};
 	case DIR_DOWN:
-		return _cellPos + VectorInt{ 0,1 };
+		return GetCellPos() + VectorInt{ 0,1 };
 	case DIR_LEFT:
-		return _cellPos + VectorInt{ -1,0 };
+		return GetCellPos() + VectorInt{ -1,0 };
 	case DIR_RIGHT:
-		return _cellPos + VectorInt{ 1,0 };
+		return GetCellPos() + VectorInt{ 1,0 };
 	}
 
-	return _cellPos;
+	return GetCellPos();
 }
 
 void MainGameObject::AdjustCollisionPos(BoxCollider* b1, BoxCollider* b2)

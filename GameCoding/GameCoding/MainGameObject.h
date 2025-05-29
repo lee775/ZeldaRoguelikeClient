@@ -17,9 +17,11 @@ public:
 	virtual void Tick() override;
 	virtual void Render(HDC hdc) override;
 
-	ObjectState GetState() { return _state; }
-	Dir GetDir() { return _dir; }
-	VectorInt GetCellPos() { return _cellPos; }
+	ObjectState GetState() { return info.state(); }
+	Dir GetDir() { return info.dir(); }
+	VectorInt GetCellPos();
+	int64 GetObjectId() { return info.objectid(); }
+	void SetObjectId(int64 id) { info.set_objectid(id); }
 
 protected:
 	virtual void TickIdle() {};
@@ -41,10 +43,7 @@ public:
 private:
 	void AdjustCollisionPos(BoxCollider* b1, BoxCollider* b2);
 
-protected:
-	Vector _speed = {};
-	VectorInt _cellPos = {};
-	Dir _dir = DIR_DOWN;
-	ObjectState _state = ObjectState::Idle;
+public:
+	Protocol::ObjectInfo info;
 };
 
