@@ -8,7 +8,6 @@
 #include "Actor.h"
 #include "SpriteActor.h"
 #include "Player.h"
-#include "GameObject.h"
 #include "SpriteRenderer.h"
 #include "PlayerMoveScript.h"
 #include "Flipbook.h"
@@ -23,6 +22,7 @@
 #include "SoundManager.h"
 #include "Sound.h"
 #include "GameMonster.h"
+#include "MyPlayer.h"
 
 DevScene::DevScene()
 {
@@ -74,8 +74,8 @@ void DevScene::Init()
 	LoadEffect();
 	LoadTilemap();
 
-	SpawnObject<Player>(VectorInt{ 5,5 });
-	SpawnObject<GameMonster>(VectorInt{ 7,7 });
+	//SpawnObject<MyPlayer>(VectorInt{ 5,5 });
+	//SpawnObject<GameMonster>(VectorInt{ 7,7 });
 
 	//{
 	//	Player* player = new Player();

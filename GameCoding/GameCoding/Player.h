@@ -20,7 +20,7 @@ public:
 
 	virtual void OnComponentBeginOverlap(Collider* collider, Collider* other) override;
 	virtual void OnComponentEndOverlap(Collider* collider, Collider* other) override;
-private:
+protected:
 	//void TickInput();
 	virtual void TickIdle() override;
 	virtual void TickMove() override;
@@ -41,7 +41,6 @@ private:
 	Flipbook* _flipbookBow[4] = {};
 	Flipbook* _flipbookStaff[4] = {};
 
-	bool _keyPressed = false;
 	WeaponType _weaponType = WeaponType::Sword;
 };
 

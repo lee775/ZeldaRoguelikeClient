@@ -161,9 +161,6 @@
     <ClInclude Include="SpriteActor.h">
       <Filter>소스 파일\03. Object\Unreal</Filter>
     </ClInclude>
-    <ClInclude Include="GameObject.h">
-      <Filter>소스 파일\03. Object\Disable\Unity</Filter>
-    </ClInclude>
     <ClInclude Include="Component.h">
       <Filter>소스 파일\05. Component</Filter>
     </ClInclude>
@@ -269,6 +266,9 @@
     <ClInclude Include="NetworkManager.h">
       <Filter>소스 파일\01. Manager\Game</Filter>
     </ClInclude>
+    <ClInclude Include="MyPlayer.h">
+      <Filter>소스 파일\03. Object\Game\Creature</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="GameCoding.rc">
@@ -313,9 +313,6 @@
     </ClCompile>
     <ClCompile Include="SpriteActor.cpp">
       <Filter>소스 파일\03. Object\Unreal</Filter>
-    </ClCompile>
-    <ClCompile Include="GameObject.cpp">
-      <Filter>소스 파일\03. Object\Disable\Unity</Filter>
     </ClCompile>
     <ClCompile Include="Component.cpp">
       <Filter>소스 파일\05. Component</Filter>
@@ -427,6 +424,9 @@
     </ClCompile>
     <ClCompile Include="NetworkManager.cpp">
       <Filter>소스 파일\01. Manager\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="MyPlayer.cpp">
+      <Filter>소스 파일\03. Object\Game\Creature</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

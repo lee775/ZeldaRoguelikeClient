@@ -158,10 +158,10 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameCoding.h" />
     <ClInclude Include="GameMonster.h" />
-    <ClInclude Include="GameObject.h" />
     <ClInclude Include="HitEffect.h" />
     <ClInclude Include="InputManager.h" />
     <ClInclude Include="MainGameObject.h" />
+    <ClInclude Include="MyPlayer.h" />
     <ClInclude Include="NetworkManager.h" />
     <ClInclude Include="ObjectManager.h" />
     <ClInclude Include="Panel.h" />
@@ -218,10 +218,10 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameCoding.cpp" />
     <ClCompile Include="GameMonster.cpp" />
-    <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="HitEffect.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="MainGameObject.cpp" />
+    <ClCompile Include="MyPlayer.cpp" />
     <ClCompile Include="NetworkManager.cpp" />
     <ClCompile Include="ObjectManager.cpp" />
     <ClCompile Include="Panel.cpp" />

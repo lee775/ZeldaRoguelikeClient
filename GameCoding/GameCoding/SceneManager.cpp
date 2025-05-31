@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "SceneManager.h"
 #include "DevScene.h"
+#include "MyPlayer.h"
 
 //#include "MenuScene.h"
 //#include "FortressScene.h"
@@ -61,4 +62,14 @@ void SceneManager::ChangeScene(SceneType sceneType)
 	_sceneType = sceneType;
 
 	newScene->Init();
+}
+
+DevScene* SceneManager::GetDevScene()
+{
+	return dynamic_cast<DevScene*>(GetCurrentScene());
+}
+
+uint64 SceneManager::GetMyPlayerId()
+{
+	return _myPlayer ? _myPlayer->info.objectid() : 0;
 }
