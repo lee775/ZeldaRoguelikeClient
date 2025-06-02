@@ -209,9 +209,6 @@
     <ClInclude Include="Sprite.h">
       <Filter>소스 파일\04. Resources\Paper2D</Filter>
     </ClInclude>
-    <ClInclude Include="TileMap.h">
-      <Filter>소스 파일\04. Resources</Filter>
-    </ClInclude>
     <ClInclude Include="ResourcesBase.h">
       <Filter>소스 파일\04. Resources</Filter>
     </ClInclude>
@@ -268,6 +265,9 @@
     </ClInclude>
     <ClInclude Include="MyPlayer.h">
       <Filter>소스 파일\03. Object\Game\Creature</Filter>
+    </ClInclude>
+    <ClInclude Include="TileMap.h">
+      <Filter>소스 파일\04. Resources</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -62,6 +62,12 @@ public:
 		return SpawnObject<T>(randPos);
 	}
 
+public:
+	void Handle_S_AddObject(Protocol::S_AddObject& pkt);
+	void Handle_S_RemoveObject(Protocol::S_RemoveObject& pkt);
+
+	MainGameObject* GetObject(uint64 id);
+
 	Player* FindClosestPlayer(VectorInt cellPos);
 
 	bool FindPath(VectorInt src, VectorInt dest, vector<VectorInt>& path, int32 maxDepth = 10);
@@ -91,7 +97,7 @@ private:
 	void TickMonsterSpawn();
 
 private:
-	const int32 DESIRED_MONSTER_COUNT = 20; 
+	const int32 DESIRED_MONSTER_COUNT = 1; 
 	int32 _monsterCount = 0;
 
 	class TileMapActor* _tilemapActor = nullptr;

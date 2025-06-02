@@ -28,6 +28,8 @@ void MyPlayer::BeginPlay()
 void MyPlayer::Tick()
 {
 	Super::Tick();
+
+	SyncToServer();
 }
 
 void MyPlayer::Render(HDC hdc)
@@ -140,4 +142,13 @@ void MyPlayer::TickMove()
 void MyPlayer::TickSkill()
 {
 	Super::TickSkill();
+}
+
+void MyPlayer::SyncToServer()
+{
+	if (_dirtyFlag == false)
+		return;
+
+	SendBufferRef sendBuffer = ClientPacketHandler::Make_C_Move();
+	GET_SINGLE(NetworkManager)->SendPacket(sendBuffer);
 }

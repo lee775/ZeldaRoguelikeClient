@@ -43,6 +43,9 @@ public:
 private:
 	void AdjustCollisionPos(BoxCollider* b1, BoxCollider* b2);
 
+protected:
+	bool _dirtyFlag = false;
+
 public:
 	Protocol::ObjectInfo info;
 };

@@ -29,6 +29,8 @@ void MainGameObject::BeginPlay()
 
 void MainGameObject::Tick()
 {
+	_dirtyFlag = false;
+
 	Super::Tick();
 
 	// TODO
@@ -65,12 +67,14 @@ void MainGameObject::SetState(ObjectState state)
 
 	info.set_state(state);
 	UpdateAnimation();
+	_dirtyFlag = true;
 }
 
 void MainGameObject::SetDir(Dir dir)
 {
 	info.set_dir(dir);
 	UpdateAnimation();
+	_dirtyFlag = true;
 }
 
 bool MainGameObject::CanGo(VectorInt cellPos)
@@ -108,6 +112,8 @@ void MainGameObject::SetCellPos(VectorInt cellPos, bool teleport)
 
 	if (teleport)
 		_pos = _destPos;
+
+	_dirtyFlag = true;
 }
 
 VectorInt MainGameObject::GetFrontCellPos()

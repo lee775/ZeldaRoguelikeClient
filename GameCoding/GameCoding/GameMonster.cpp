@@ -57,6 +57,9 @@ void GameMonster::TickIdle()
 	if (scene == nullptr)
 		return;
 
+	// 서버쪽으로 로직 이동
+	return;
+
 	// Find Player
 	if (_target == nullptr)
 		_target = scene->FindClosestPlayer(GetCellPos());

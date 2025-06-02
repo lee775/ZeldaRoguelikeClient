@@ -23,6 +23,8 @@
 #include "Sound.h"
 #include "GameMonster.h"
 #include "MyPlayer.h"
+#include "SceneManager.h"
+#include "GameMonster.h"
 
 DevScene::DevScene()
 {
@@ -384,6 +386,59 @@ void DevScene::LoadTilemap()
 	}
 }
 
+void DevScene::Handle_S_AddObject(Protocol::S_AddObject& pkt)
+{
+	uint64 myPlayerId = GET_SINGLE(SceneManager)->GetMyPlayerId();
+
+	const int32 size = pkt.objects_size();
+	for (int32 i = 0; i < size; i++)
+	{
+		const Protocol::ObjectInfo& info = pkt.objects(i);
+		if (myPlayerId == info.objectid())
+			continue;
+
+		if (info.objecttype() == Protocol::OBJECT_TYPE_PLAYER)
+		{
+			Player* player = SpawnObject<Player>(VectorInt{ info.posx(),info.posy()});
+			player->SetDir(info.dir());
+			player->SetState(info.state());
+			player->info = info;
+		}
+		else if (info.objecttype() == Protocol::OBJECT_TYPE_MONSTER)
+		{
+			GameMonster* monster = SpawnObject<GameMonster>(VectorInt{ info.posx(),info.posy() });
+			monster->SetDir(info.dir());
+			monster->SetState(info.state());
+			monster->info = info;
+		}
+	}
+}
+
+void DevScene::Handle_S_RemoveObject(Protocol::S_RemoveObject& pkt)
+{
+	const int32 size = pkt.id_size();
+	for (int32 i = 0; i < size; i++)
+	{
+		int32 id = pkt.id(i);
+
+		MainGameObject* object = this->GetObject(id);
+		if (object)
+			RemoveActor(object);
+	}
+}
+
+MainGameObject* DevScene::GetObject(uint64 id)
+{
+	for (Actor* actor : _actors[LAYER_OBJECT])
+	{
+		MainGameObject* gameObject = dynamic_cast<MainGameObject*>(actor);
+		if (gameObject && gameObject->info.objectid() == id)
+			return gameObject;
+	}
+
+	return nullptr;
+}
+
 Player* DevScene::FindClosestPlayer(VectorInt cellPos)
 {
 	float best = FLT_MAX;
@@ -598,6 +653,8 @@ VectorInt DevScene::GetRandomEmptyCellPos()
 
 void DevScene::TickMonsterSpawn()
 {
+	return; 
+
 	if (_monsterCount < DESIRED_MONSTER_COUNT)
 		SpawnOnjectAtRandomPos<GameMonster>();
 }
