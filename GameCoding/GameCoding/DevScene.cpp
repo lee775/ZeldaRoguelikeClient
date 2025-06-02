@@ -422,6 +422,10 @@ void DevScene::Handle_S_RemoveObject(Protocol::S_RemoveObject& pkt)
 		int32 id = pkt.id(i);
 
 		MainGameObject* object = this->GetObject(id);
+
+		if (GET_SINGLE(SceneManager)->GetMyPlayerId() == id)
+			GET_SINGLE(SceneManager)->GetMyPlayer()->GameOver();
+
 		if (object)
 			RemoveActor(object);
 	}

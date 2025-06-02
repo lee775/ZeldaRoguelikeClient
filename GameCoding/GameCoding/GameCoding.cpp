@@ -74,6 +74,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 		}
 	}
 
+	::MessageBox(g_hWnd, L"Game Over!", L"알림", MB_OK | MB_ICONINFORMATION);
+
 	return (int)msg.wParam;
 }
 

@@ -7,6 +7,7 @@
 #include "ResourceManager.h"
 #include "SoundManager.h"
 #include "NetworkManager.h"
+#include "MyPlayer.h"
 
 Game::Game()
 {
@@ -57,6 +58,9 @@ void Game::Update()
 	GET_SINGLE(InputManager)->Update();
 	GET_SINGLE(SceneManager)->Update();
 	GET_SINGLE(NetworkManager)->Update();
+
+	if (GET_SINGLE(SceneManager)->GetMyPlayer() && GET_SINGLE(SceneManager)->GetMyPlayer()->getIsDead())
+		PostQuitMessage(0);
 }
 
 void Game::Render()

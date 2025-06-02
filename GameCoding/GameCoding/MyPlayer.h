@@ -14,6 +14,9 @@ public:
 	virtual void Tick() override;
 	virtual void Render(HDC hdc) override;
 
+	void GameOver() { _isDead = true; }
+	bool getIsDead() { return _isDead; }
+
 private:
 	void TickInput();
 	void TryMove();
@@ -27,5 +30,6 @@ private:
 
 private:
 	bool _keyPressed = false;
+	bool _isDead = false;
 };
 
