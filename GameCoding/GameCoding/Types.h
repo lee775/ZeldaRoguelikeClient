@@ -14,15 +14,6 @@ using uint64 = unsigned __int64;
 
 using ServerSessionRef = std::shared_ptr<class ServerSession>;
 
-struct Stat
-{
-	int32 hp = 0;
-	int32 maxHp = 0;
-	int32 attack = 0;
-	int32 defence = 0;
-	float speed = 0;
-};
-
 struct Vector
 {
 	Vector() {}

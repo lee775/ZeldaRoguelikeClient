@@ -20,11 +20,5 @@ private:
 
 public:
 	virtual void OnDamaged(Creature* attacker);
-
-	void SetStat(Stat stat) { _status = stat; }
-	Stat& GetStat() { return _status; }
-
-protected:
-	Stat _status;
 };
 

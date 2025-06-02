@@ -50,25 +50,25 @@ void Creature::UpdateAnimation()
 
 void Creature::OnDamaged(Creature* attacker)
 {
-	if (attacker == nullptr)
-		return;
+	//if (attacker == nullptr)
+	//	return;
 
-	Stat& attackerStat = attacker->GetStat();
-	Stat& stat = GetStat();
+	//Stat& attackerStat = attacker->GetStat();
+	//Stat& stat = GetStat();
 
-	int32 damage = attackerStat.attack - stat.defence;
-	if (damage <= 0)
-		return;
+	//int32 damage = attackerStat.attack - stat.defence;
+	//if (damage <= 0)
+	//	return;
 
-	stat.hp = max(0, stat.hp - damage);
+	//stat.hp = max(0, stat.hp - damage);
 
-	if (stat.hp == 0)
-	{
-		Scene* scene = GET_SINGLE(SceneManager)->GetCurrentScene();
-		if (scene)
-		{
-			scene->RemoveActor(this);
-		}
-	}
+	//if (stat.hp == 0)
+	//{
+	//	Scene* scene = GET_SINGLE(SceneManager)->GetCurrentScene();
+	//	if (scene)
+	//	{
+	//		scene->RemoveActor(this);
+	//	}
+	//}
 
 }
