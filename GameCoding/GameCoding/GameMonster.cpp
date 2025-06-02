@@ -10,7 +10,6 @@
 #include "DevScene.h"
 #include "SceneManager.h"
 #include "Player.h"
-#include "HitEffect.h"
 
 GameMonster::GameMonster()
 {
@@ -48,47 +47,47 @@ void GameMonster::Render(HDC hdc)
 
 void GameMonster::TickIdle()
 {
-	DevScene* scene = dynamic_cast<DevScene*>(GET_SINGLE(SceneManager)->GetCurrentScene());
-	if (scene == nullptr)
-		return;
+	//DevScene* scene = dynamic_cast<DevScene*>(GET_SINGLE(SceneManager)->GetCurrentScene());
+	//if (scene == nullptr)
+	//	return;
 
-	// 서버쪽으로 로직 이동
-	return;
+	//// 서버쪽으로 로직 이동
+	//return;
 
-	// Find Player
-	if (_target == nullptr)
-		_target = scene->FindClosestPlayer(GetCellPos());
+	//// Find Player
+	//if (_target == nullptr)
+	//	_target = scene->FindClosestPlayer(GetCellPos());
 
-	if (_target)
-	{
-		VectorInt dir = _target->GetCellPos() - GetCellPos();
-		int32 dist = abs(dir.x) + abs(dir.y);
-		if (dist == 1)
-		{
-			// 공격
-			SetDir(GetLookAtDir(_target->GetCellPos()));
-			SetState(SKILL);
-			_waitSeconds = 0.5f; // 공격 종료 시간
-		}
-		else
-		{
-			vector<VectorInt> path;
-			if (scene->FindPath(GetCellPos(), _target->GetCellPos(), OUT path))
-			{
-				if (path.size() > 1)
-				{
-					VectorInt nextPos = path[1];
-					if (scene->CanGo(nextPos))
-					{
-						SetCellPos(nextPos);
-						SetState(MOVE);
-					}
-				}
-				else
-					SetCellPos(path[0]);
-			}
-		}
-	}
+	//if (_target)
+	//{
+	//	VectorInt dir = _target->GetCellPos() - GetCellPos();
+	//	int32 dist = abs(dir.x) + abs(dir.y);
+	//	if (dist == 1)
+	//	{
+	//		// 공격
+	//		SetDir(GetLookAtDir(_target->GetCellPos()));
+	//		SetState(SKILL);
+	//		_waitSeconds = 0.5f; // 공격 종료 시간
+	//	}
+	//	else
+	//	{
+	//		vector<VectorInt> path;
+	//		if (scene->FindPath(GetCellPos(), _target->GetCellPos(), OUT path))
+	//		{
+	//			if (path.size() > 1)
+	//			{
+	//				VectorInt nextPos = path[1];
+	//				if (scene->CanGo(nextPos))
+	//				{
+	//					SetCellPos(nextPos);
+	//					SetState(MOVE);
+	//				}
+	//			}
+	//			else
+	//				SetCellPos(path[0]);
+	//		}
+	//	}
+	//}
 }
 
 void GameMonster::TickMove()
@@ -130,41 +129,24 @@ void GameMonster::TickMove()
 
 void GameMonster::TickSkill()
 {
-	if (_flipbook == nullptr)
-		return;
+	//if (_flipbook == nullptr)
+	//	return;
 
-	if (_waitSeconds > 0)
-	{
-		float deltaTime = GET_SINGLE(TimeManager)->GetDeltaTime();
-		_waitSeconds = max(0, static_cast<int32>(_waitSeconds - deltaTime));
-		return;
-	}
+	//DevScene* scene = dynamic_cast<DevScene*>(GET_SINGLE(SceneManager)->GetCurrentScene());
+	//if (scene == nullptr)
+	//	return;
 
-	DevScene* scene = dynamic_cast<DevScene*>(GET_SINGLE(SceneManager)->GetCurrentScene());
-	if (scene == nullptr)
-		return;
+	//Creature* creature = scene->GetCreatureAt(GetFrontCellPos());
+	//if (creature)
+	//{
+	//	scene->SpawnObject<HitEffect>(GetFrontCellPos());
+	//	creature->OnDamaged(this);
+	//}
 
-	Creature* creature = scene->GetCreatureAt(GetFrontCellPos());
-	if (creature)
-	{
-		scene->SpawnObject<HitEffect>(GetFrontCellPos());
-		creature->OnDamaged(this);
-	}
-
-	SetState(IDLE);
+	//SetState(IDLE);
 }
 
 void GameMonster::UpdateAnimation()
 {
 	SetFlipbook(_flipbookMove[info.dir()]);
-}
-
-void GameMonster::OnDamaged(Creature* attacker)
-{
-	Super::OnDamaged(attacker);
-
-	if (info.state() == IDLE)
-	{
-
-	}
 }

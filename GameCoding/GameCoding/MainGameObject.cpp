@@ -9,6 +9,7 @@
 #include "BoxCollider.h"
 #include "DevScene.h"
 #include "SceneManager.h"
+#include "HitEffect.h"
 
 MainGameObject::MainGameObject()
 {
@@ -58,6 +59,15 @@ void MainGameObject::Render(HDC hdc)
 VectorInt MainGameObject::GetCellPos()
 {
 	return VectorInt{info.posx(), info.posy() };
+}
+
+void MainGameObject::SpawnHitEffect()
+{
+	DevScene* scene = dynamic_cast<DevScene*>(GET_SINGLE(SceneManager)->GetCurrentScene());
+	if (scene == nullptr)
+		return;
+
+	scene->SpawnObject<HitEffect>(GetCellPos());
 }
 
 void MainGameObject::SetState(ObjectState state)

@@ -32,6 +32,9 @@ void ClientPacketHandler::HandlePacket(ServerSessionRef session, BYTE* buffer, i
 	case S_Move:
 		Handle_S_Move(session, buffer, len);
 		break;
+	case S_Attack:
+		Handle_S_Attack(session, buffer, len);
+		break;
 	}
 }
 
@@ -176,6 +179,28 @@ void ClientPacketHandler::Handle_S_Move(ServerSessionRef session, BYTE* buffer, 
 			gameObject->SetState(info.state());
 			gameObject->SetCellPos(VectorInt{ info.posx(),info.posy()});
 		}
+	}
+}
+
+void ClientPacketHandler::Handle_S_Attack(ServerSessionRef session, BYTE* buffer, int32 len)
+{
+	PacketHeader* header = (PacketHeader*)buffer;
+	uint16 size = header->size;
+
+	Protocol::S_Attack pkt;
+	pkt.ParseFromArray(&header[1], size - sizeof(PacketHeader));
+
+	const Protocol::ObjectInfo& targetInfo = pkt.targetinfo();
+	const Protocol::ObjectInfo& attackerInfo = pkt.attackerinfo();
+
+	DevScene* scene = GET_SINGLE(SceneManager)->GetDevScene();
+	if (scene)
+	{
+		MainGameObject* targetObject = scene->GetObject(targetInfo.objectid());
+		MainGameObject* attackerObject = scene->GetObject(attackerInfo.objectid());
+
+		targetObject->info.set_hp(targetInfo.hp());
+		targetObject->SpawnHitEffect();
 	}
 }
 

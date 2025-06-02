@@ -11,6 +11,8 @@ enum
 
 	C_Move = 10,
 	S_Move = 11,
+
+	S_Attack = 20,
 };
 
 class ClientPacketHandler
@@ -25,6 +27,7 @@ public:
 	static void Handle_S_AddObject(ServerSessionRef session, BYTE* buffer, int32 len);
 	static void Handle_S_RemoveObject(ServerSessionRef session, BYTE* buffer, int32 len);
 	static void Handle_S_Move(ServerSessionRef session, BYTE* buffer, int32 len);
+	static void Handle_S_Attack(ServerSessionRef session, BYTE* buffer, int32 len);
 
 	// º¸³»±â
 	static SendBufferRef Make_C_Move();

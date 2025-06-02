@@ -22,6 +22,7 @@ public:
 	VectorInt GetCellPos();
 	int64 GetObjectId() { return info.objectid(); }
 	void SetObjectId(int64 id) { info.set_objectid(id); }
+	void SpawnHitEffect();
 
 protected:
 	virtual void TickIdle() {};

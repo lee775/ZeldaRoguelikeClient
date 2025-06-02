@@ -20,14 +20,7 @@ private:
 	virtual void TickSkill() override;
 	virtual void UpdateAnimation() override;
 
-	virtual void OnDamaged(Creature* attacker) override;
-
 protected:
 	Flipbook* _flipbookMove[4] = {};
-	float _waitSeconds = 0.f;
-	//Flipbook* _flipbookAttack[4] = {};
-
-	// TEMP
-	Player* _target = nullptr;
 };
 
