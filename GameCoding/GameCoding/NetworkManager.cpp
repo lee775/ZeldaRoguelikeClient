@@ -37,7 +37,7 @@ void NetworkManager::Update()
 
 ServerSessionRef NetworkManager::CreateSession()
 {
-	return _session = make_shared<ServerSession>();
+	return _session = make_shared<ServerSession>(ServerLibMode::iocp);
 }
 
 void NetworkManager::SendPacket(SendBufferRef sendBuffer)

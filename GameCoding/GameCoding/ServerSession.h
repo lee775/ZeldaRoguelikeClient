@@ -3,6 +3,10 @@
 class ServerSession : public PacketSession
 {
 public:
+	ServerSession(ServerLibMode mode) : PacketSession(mode)
+	{
+
+	}
 	~ServerSession()
 	{
 		//cout << "~ServerSession" << endl;
